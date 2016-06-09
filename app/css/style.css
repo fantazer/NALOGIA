@@ -1,0 +1,465 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("/fonts/icomoon.eot?u78ibn");
+  src: url("/fonts/icomoon.eot?u78ibn#iefix") format('embedded-opentype'), url("/fonts/icomoon.ttf?u78ibn") format('truetype'), url("/fonts/icomoon.woff?u78ibn") format('woff'), url("/fonts/icomoon.svg?u78ibn#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-radio:before {
+  content: "\e03e";
+}
+.icon-recent_actors:before {
+  content: "\e03f";
+}
+.icon-repeat:before {
+  content: "\e040";
+}
+.icon-laptop:before {
+  content: "\e001";
+}
+.icon-briefcase:before {
+  content: "\e015";
+}
+.icon-wallet:before {
+  content: "\e016";
+}
+a:hover {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.bold {
+  font-weight: 600;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  display: block;
+}
+input {
+  outline: 0 !important;
+}
+.type {
+  font-size: 14px;
+  line-height: 17px;
+}
+.type-small {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.hidden {
+  display: none !important;
+}
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-IMG_11032016_160446 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 1602px;
+  height: 948px;
+}
+.icon-russia:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -948px;
+  width: 640px;
+  height: 480px;
+}
+.icon-russia {
+  background-image: url(../img/sprite.png);
+  background-position: -640px -948px;
+  width: 640px;
+  height: 480px;
+}
+
+.m-top-baner {
+  background-image: url("../img/n-baner.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 700px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 768px) {
+  .m-top-baner {
+    background-color: #f1f6fb;
+    background-image: url("../img/absurdity.png");
+    background-repeat: repeat;
+    background-size: inherit;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .m-top-baner .btn.btn-nalogia {
+    white-space: normal;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .m-top-baner__btn {
+    text-align: center;
+  }
+}
+.btn.btn-nalogia {
+  padding: 6px 40px;
+  background: linear-gradient(to bottom, #5c9dda 0%, #337ab7 100%);
+  font-family: Open Sans;
+  text-shadow: 0 1px rgba(0,0,0,0.5);
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn.btn-nalogia.btn-sm {
+  font-size: 14px;
+  padding: 4px 15px;
+}
+.btn.btn-nalogia:hover {
+  background: linear-gradient(to bottom, #70b4f0 0%, #4792d1 100%);
+}
+.m-top-baner__title {
+  color: #337ab7;
+  font-family: Open Sans;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .m-top-baner__title {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+.m-top-baner__info {
+  color: #333;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .m-top-baner__info {
+    text-align: center;
+  }
+}
+.m-top-baner {
+  position: relative;
+}
+.m-top-baner__footer {
+  width: 95%;
+  position: absolute;
+  text-align: center;
+  bottom: 70px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+@media only screen and (max-width: 768px) {
+  .m-top-baner__footer {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+.m-top-baner__footer a {
+  color: #377ebb;
+  font-weight: 700;
+}
+.m-section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #333;
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .m-section__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .m-section-work__el {
+    margin-bottom: 20px;
+  }
+}
+.m-section-work__img {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .m-section-work__img:before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/n-icon-arrow.png");
+    width: 20px;
+    height: 30px;
+    background-repeat: no-repeat;
+    right: -20px;
+    top: 50%;
+    margin-top: -10px;
+  }
+}
+.m-section-work__img img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.m-section-work__text {
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+}
+.lch:before {
+  content: '';
+  background-image: none !important;
+}
+.m-section {
+  padding: 70px 0;
+}
+@media only screen and (max-width: 768px) {
+  .m-section {
+    padding: 20px 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .m-section .btn.btn-nalogia {
+    white-space: normal;
+    font-size: 13px;
+  }
+}
+.m-section-chouse__img {
+  position: relative;
+}
+.m-section-chouse__img img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.m-section-chouse__text {
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+}
+.m-section-chouse {
+  background-color: #f1f6fb;
+  background-image: url("../img/absurdity.png");
+}
+.m-section-chouse__chouse {
+  margin: 50px 0px;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-chouse__chouse {
+    margin: 20px 0px;
+  }
+}
+.m-section-chouse__footer {
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-chouse__footer {
+    font-size: 14px;
+  }
+}
+.m-section-chouse__footer a {
+  color: #377ebb;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-chouse__el {
+    margin-bottom: 20px;
+  }
+}
+.m-section-review {
+  background-color: #f7f9fa;
+}
+.m-section-review__text {
+  color: #333;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 100;
+  font-style: italic;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-review__text {
+    margin-top: 40px;
+  }
+}
+.m-section-review__text:before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  background-image: url("../img/n-icon-bracket-left.png");
+  top: -30px;
+  left: -20px;
+}
+.m-section-review__text:after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  background-image: url("../img/n-icon-bracket-right.png");
+  bottom: -30px;
+  right: -20px;
+}
+.m-section-review__name {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  color: #333;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-review__name {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .m-section__title {
+    font-size: 24px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+}
+.m-section-variant-el {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-variant-el {
+    width: 100%;
+  }
+}
+.m-section-variant-el span {
+  font-size: 12px;
+}
+.m-section-variant-el__content {
+  padding: 40px 60px;
+  background-color: #e5e9ed;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 0 0 17px rgba(0,28,53,0.1);
+  height: 290px;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-variant-el__content {
+    padding: 20px 20px;
+    height: auto;
+  }
+}
+.m-section-variant-el__title {
+  color: #3b81be;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  height: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-variant-el__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+.m-section-variant-el__val {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+.m-section-variant-el__footer {
+  background-color: #3b81be;
+  padding: 50px 60px;
+  color: #fff;
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 0px 0px 8px 8px;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-variant-el__footer {
+    padding: 20px 20px;
+  }
+}
+.m-section-variant__text {
+  color: #333;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-variant__text {
+    font-size: 16px;
+    width: 100%;
+  }
+}

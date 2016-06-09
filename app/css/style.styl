@@ -1,0 +1,275 @@
+@import "icon/*"
+@import 'rupture'
+@import "variable/*"
+@import "include/*"
+@import "icon/sprite.css"
+//@import "part.styl"
+
+rupture.scale = 0 400px 600px 780px 960px 1300px
+rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
+
+.m-top-baner
+	+below(768px)
+		background-color: #f1f6fb;
+		background-image: url("../img/absurdity.png")
+		background-repeat repeat
+		background-size inherit
+		height auto 
+	background-image url('../img/n-baner.jpg') 
+	background-size cover
+	background-position center top 
+	height 700px
+	width 100%
+	background-repeat no-repeat 
+	.btn.btn-nalogia
+		+below(768px)
+			white-space normal
+			font-size 13px
+.m-top-baner__btn
+	+below(768px)
+		text-align center
+.btn.btn-nalogia 
+	padding 6px 40px
+	background linear-gradient(to bottom, #5c9dda 0%, #337ab7 100%)
+	font-family Open Sans
+	text-shadow 0 1px rgba(0, 0, 0, 0.5)
+	font-size 16px
+	font-weight 600
+.btn.btn-nalogia.btn-sm
+	font-size 14px
+	padding 4px 15px
+.btn.btn-nalogia:hover
+	background: linear-gradient(to bottom, #70b4f0 0%, #4792d1 100%)
+
+.m-top-baner__title
+	+below(768px)
+		text-align center
+		font-size 24px
+	color #337ab7
+	font-family Open Sans
+	font-size 36px
+	font-weight 600
+	margin-top 70px
+	margin-bottom 30px
+.m-top-baner__info
+	+below(768px)
+		text-align center
+	color #333
+	font-family Helvetica
+	font-size 20px
+	font-weight 300
+	margin-bottom 30px
+.m-top-baner
+	position relative
+.m-top-baner__footer
+	+below(768px)
+		position static
+		text-align center
+		margin-top 20px
+		padding-bottom 20px
+		width 100%
+		font-size 14px
+	width 95%
+	position absolute
+	text-align center
+	bottom 70px
+	font-family Open Sans
+	font-size 16px
+	font-weight 400
+	color #333
+	a
+		color #377ebb
+		font-weight 700
+
+.m-section__title
+	+below(768px)
+		margin-bottom 20px
+		font-size 24px
+	margin-bottom 50px
+	text-align center
+	color #333
+	font-family Open Sans
+	font-size 30px
+	font-weight 400
+.m-section-work__el
+	+below(768px)
+		margin-bottom 20px
+.m-section-work__img
+	position relative
+	+above(768px)
+		&:before
+			content ''
+			position absolute
+			background-image url('../img/n-icon-arrow.png') 
+			width 20px
+			height 30px
+			background-repeat no-repeat
+			right -20px
+			top 50%
+			margin-top -10px
+	img
+		margin 0 auto
+		display block
+		margin-bottom 30px 
+.m-section-work__text 
+	text-align center
+	width 200px
+	margin 0 auto
+	font-family Helvetica
+	font-size 16px
+	font-weight 400
+.lch
+	&:before
+		content ''
+		background-image none!important 
+.m-section
+	+below(768px)
+		padding 20px 0px
+	padding 70px 0
+	.btn.btn-nalogia
+		+below(768px)
+			white-space normal
+			font-size 13px
+
+.m-section-chouse__img
+	position relative
+	img
+		margin 0 auto
+		display block
+		margin-bottom 30px 
+.m-section-chouse__text 
+	text-align center
+	width 200px
+	margin 0 auto
+	font-family Helvetica
+	font-size 16px
+	font-weight 400
+.m-section-chouse
+	background-color: #f1f6fb;
+	background-image: url('../img/absurdity.png')
+.m-section-chouse__chouse
+	+below(768px)
+		margin 20px 0px
+	margin 50px 0px
+.m-section-chouse__footer
+	+below(768px)
+		font-size 14px
+	text-align center
+	font-family Open Sans
+	font-size 16px
+	font-weight 400
+	color #333
+	a
+		color #377ebb
+		font-weight 700
+.m-section-chouse__el
+	+below(768px)
+		margin-bottom 20px
+.m-section-review
+	background-color #f7f9fa
+.m-section-review__text
+	+below(768px)
+		margin-top 40px
+		
+	color #333
+	font-family Helvetica
+	font-size 14px
+	font-weight 100
+	font-style italic
+	position relative
+	width 90%
+	margin 0 auto
+	&:before
+		content ''
+		position absolute
+		width 28px
+		height 24px
+		background-image url('../img/n-icon-bracket-left.png') 
+		top -30px
+		left -20px
+	&:after
+		content ''
+		position absolute
+		width 28px
+		height 24px
+		background-image url('../img/n-icon-bracket-right.png') 
+		bottom -30px
+		right -20px
+		
+.m-section-review__name
+	+below(768px)
+		margin-top 30px
+		margin-bottom 30px
+	margin-top 60px
+	margin-bottom 50px
+	color #333
+	font-family Helvetica
+	font-size 16px
+	font-weight 500
+	
+
+	
+//.m-section-variant
+.m-section__title
+	+below(768px)
+		font-size 24px
+		padding 0 10px
+		margin-bottom 30px
+.m-section-variant-el
+	+below(768px)
+		width 100%
+	width 90%
+	margin 0 auto
+	margin-bottom 40px
+	span 
+		font-size 12px
+.m-section-variant-el__content
+	+below(768px)
+		padding 20px 20px
+		height auto 
+	padding 40px 60px
+	background-color #e5e9ed
+	border-radius 8px 8px 0px 0px
+	box-shadow 0 0 17px rgba(0, 28, 53, 0.1)
+	height 290px
+.m-section-variant-el__title
+	+below(768px)
+		font-size 16px
+		margin-bottom 10px
+	color #3b81be
+	font-family Helvetica
+	font-size 20px
+	font-weight 500
+	text-transform uppercase
+	text-align center
+	margin-bottom 40px
+	height 50px
+	
+.m-section-variant-el__val
+	color black
+	font-family Open Sans
+	font-size 60px
+	font-weight 600
+	text-align center
+.m-section-variant-el__footer
+	+below(768px)
+		padding 20px 20px
+	background-color #3b81be
+	padding 50px 60px
+	color white
+	color white
+	font-family Helvetica
+	font-size 16px
+	font-weight 400
+	text-align center
+	border-radius 0px 0px 8px 8px
+.m-section-variant__text
+	+below(768px)
+		font-size 16px
+		width 100%
+	color #333
+	font-family Helvetica
+	font-size 20px
+	font-weight 300
+	margin 0 auto
+	width 60%
