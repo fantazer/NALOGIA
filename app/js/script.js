@@ -113,42 +113,18 @@ $(document).ready(function(){
 	/* ###### init OwlCarousel2  ######*/
 	/*!!! add class .owl-carousel !!!*/
 	/* ###### bower i OwlCarousel2 ######*/
-	// $("#owl-example").owlCarousel({
-	//  	items : 1,
-	//		responsive : {
-	//		 		0:{
-	//				 	items : 1
-	//			 	},
-	//			 	768:{
-	//				 	items : 2
-	//			 	},
-	//			 	960:{
-	//				 	items : 2
-	//			 	},
-	//			 	
-	//		  },
-	//  	margin:50,
-	//  	autoHeight : true,
-	//  	pagination : false,
-	//  	autoplay : true,
-	//  	singleItem:true,
-	//  	nav:true,
-	// 		navText:['<i class="fa fa-arrow-circle-o-left"></i>','<i class="fa fa-arrow-circle-o-right"></i>']
-	//  	}
-	//  ); 
-	//		.owl-next,
-	//		.owl-prev
-	//			position absolute
-	//			top 50%
-	//			margin-top -20px
-	//			
-	//		.owl-carousel
-	//			position relative
-	//		.owl-prev
-	//			left -5%
-	//		.owl-next
-	//			right -5%
-	//
+	$(".m-wrap-slider").owlCarousel({
+	 	items : 1,
+	 	autoHeight : true,
+	 	pagination : false,
+	 	autoplay : true,
+	 	singleItem:true,
+	 	nav:true,
+	 	loop:true,
+			navText:['<img src="img/m-slider-left.png">','<img src="img/m-slider-right.png">']
+	 	}
+	 ); 
+	
 
 	/* ###### init validate form  ######*/
 	/* ###### bower i jquery-validation ######*/

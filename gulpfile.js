@@ -166,16 +166,14 @@ gulp.task('make', function () {
   gulp.src('app/js/*.js')
   .pipe(uglify())
   .pipe(gulp.dest('dist/js/'));
-
    gulp.src('app/css/style.css')
-  .pipe(minifyCss())
+  //.pipe(minifyCss())
   .pipe(gulp.dest('dist/css/'));
   return gulp.src('app/*.html')
       .pipe(cache('make'))
       .pipe(assets)
       .pipe(remember('make'))
-      .pipe(gulpif('*.js', uglify()))
-      .pipe(gulpif('*.css', minifyCss()))
+      //.pipe(gulpif('*.css', minifyCss()))
       .pipe(assets.restore())
       .pipe(useref())
       .pipe(gulp.dest('dist'));

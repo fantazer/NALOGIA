@@ -7,7 +7,6 @@
 
 rupture.scale = 0 400px 600px 780px 960px 1300px
 rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
-
 .m-top-baner
 	+below(768px)
 		background-color: #f1f6fb;
@@ -28,19 +27,8 @@ rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 .m-top-baner__btn
 	+below(768px)
 		text-align center
-.btn.btn-nalogia 
-	padding 6px 40px
-	background linear-gradient(to bottom, #5c9dda 0%, #337ab7 100%)
-	font-family Open Sans
-	text-shadow 0 1px rgba(0, 0, 0, 0.5)
-	font-size 16px
-	font-weight 600
-.btn.btn-nalogia.btn-sm
-	font-size 14px
-	padding 4px 15px
-.btn.btn-nalogia:hover
-	background: linear-gradient(to bottom, #70b4f0 0%, #4792d1 100%)
-
+		.btn
+			font-size 12px!important
 .m-top-baner__title
 	+below(768px)
 		text-align center
@@ -170,7 +158,6 @@ rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 .m-section-review__text
 	+below(768px)
 		margin-top 40px
-		
 	color #333
 	font-family Helvetica
 	font-size 14px
@@ -273,3 +260,83 @@ rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 	font-weight 300
 	margin 0 auto
 	width 60%
+
+//ADD STYLE SLIDER
+
+.m-el-slider
+	+below(480px)
+		height 200px
+	height 400px
+	background-size  cover
+	background-position center 
+.m-wrap-slider
+	bsh()
+.m-wrap-slider
+	center(1366px)
+	position relative
+	width 100%
+	+above(1366px)
+		width 1366px
+.m-wrap-slider__content
+	+below(480px)
+		padding 30px 10px
+	center(970px)
+	position relative
+	width 100%
+	+above(970px)
+		width 970px
+	padding 80px 20px
+.m-wrap-slider__text
+	+below(480px)
+		font-size 18px
+		width 70%
+	color #337ab7
+	font-size 39px
+	font-weight 400
+	width 400px
+
+//control slider
+.owl-nav
+	+below(1540px)
+		display none 
+.owl-next,.owl-prev
+	position absolute
+	top 50%
+	margin-top -30px
+	color white
+	font-size 40px
+.owl-carousel
+	position relative
+	.icon
+		font-size 64px
+.owl-prev
+	+below(768px)
+		left 2%
+	left -5%
+.owl-next
+	+below(768px)
+		right 2%
+	right -5%
+.owl-dots
+	+below(480px)
+		margin-top -20px
+	width 100%
+	flex(mid)
+	margin-top -40px
+	position relative
+	z-index 2000
+.owl-dot
+	+below(480px)
+		width 10px
+		height 10px
+	round()
+	margin 5px
+	width 15px
+	height 15px
+	background white
+	box-shadow inset 0px 1px 1px
+.owl-dot.active
+	background #337ab7
+//control slider
+
+//ADD STYLE SLIDER-end

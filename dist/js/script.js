@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){$(".m-wrap-slider").owlCarousel({items:1,autoHeight:!0,pagination:!1,autoplay:!0,singleItem:!0,nav:!0,loop:!0,navText:['<img src="img/m-slider-left.png">','<img src="img/m-slider-right.png">']})});
