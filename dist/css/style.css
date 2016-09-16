@@ -373,6 +373,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     width: 100%;
   }
 }
+/*
+ * ADD STYLE SLIDER
+ */
 .m-el-slider {
   height: 400px;
   background-size: cover;
@@ -414,6 +417,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-wrap-slider__content {
+  -webkit-transform: translateZ(0px);
   *zoom: 1;
   width: auto;
   max-width: 970px;
@@ -534,3 +538,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .owl-dot.active {
   background: #337ab7;
 }
+/*
+ * ADD STYLE SLIDER - end
+ */
