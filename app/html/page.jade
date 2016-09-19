@@ -1,7 +1,246 @@
-<!DOCTYPE html>
-html(lang="en")
-head
-	meta(charset="UTF-8")
-	title Document
+//Include style
+include block_html/_style.jade
 body
+	//Include header
+	include block_html/elements/_header.jade
+	include block_html/elements/_const.jade
+
 	
+	//Section Calc
+	.container.m-calc__content
+		.row
+			.col-md-6.col-sm-12.col-xs-12
+				.calc__title-lg Калькулятор налоговых вычетов
+				p Выберите, пожалуйста, год и внесите Ваши доходы и расходы (округленные до рублей) за этот год. Калькулятор рассчитает примерные цифры, основываясь на допущениях. Калькулятор рассчитает итоговую сумму налога к возврату (а не сумму налогового вычета, на которую уменьшается налоговая база). Все итоговые поля рассчитывают результат для данного, выбранного года, кроме последнего поля (внизу) "Всего налогов к возврату, переносимых на следующий год".
+				.m-calc__wrap
+					form(action="#")
+						.m-calc__row
+							.m-calc__row-title Год, в котором были доходы и расходы
+							.m-calc__input
+								select#(name="")
+									option 2016
+									option 2015
+									option 2014
+						.m-calc__row
+							.m-calc__row-title Заработок за год до вычета налога (гросс), руб
+							.m-calc__input
+								input(type="text")
+						.m-calc__row
+							.m-calc__row-title Заработок за год после вычета налогов (нетто), руб
+							.m-calc__input
+								input(type="text")
+						.m-calc__divider
+						
+						.m-calc__row
+							.m-calc__row-title Приобретение жилья, руб.1
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+						.m-calc__row
+							.m-calc__row-title Проценты по кредиту на жилье (ипотеке), руб.1
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+						.m-calc__row
+							.m-calc__row-title Свое обучение, руб.2
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+						.m-calc__row
+							.m-calc__row-title Лечение и покупкалекарств, руб.2
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+						.m-calc__row
+							.m-calc__row-title Дорогое лечениеи лекарства(особый перечень), руб
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+						.m-calc__row
+							.m-calc__row-title Обучение первого ребенка, руб
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+						.m-calc__divider
+
+						.m-calc__row
+							.m-calc__row-title.m-calc__row-title--bold Всего налоговк возврату в этом году, руб
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+						.m-calc__row
+							.m-calc__row-title.m-calc__row-title--bold Всего налоговк возврату, переносимых на следующий год, руб
+							.m-calc__input
+								input(type="text")
+								input(type="text")
+				p Примечания:
+				p 1) Если Вы уже использовали часть вычета по жилью, вводите не общую стоимость и сумму процентов, а значения за вычетом уже предоставленного в прошлых периодах вычета. Если у Вас, кроме жилья, есть вычеты по обучению или лечению, сначала будут рассчитаны вычеты по лечению и обучению, а вычеты по жилью будут рассчитаны как перенесенные на следующий год. По жилью, оформленному до 2014 года, вычет по процентам по ипотеке предоставляется без ограничения, а по жилью, оформленному начиная с 2014 года (включая 2014 год), лимит налога к возврату по процентам по ипотеке составляет 390 000 рублей. 
+				//- p 2) Существует лимит налоговых вычетов по лечению (за исключением дорогостоящего) и своему обучению вместе. Поэтому, если у Вас есть и тот и другой вычет, калькулятор рассчитает их с учетом лимитов по каждому вычету и общего лимита.
+			.col-md-6.col-sm-12.col-xs-12
+				.calc__title-lg Калькулятор налоговых вычетов
+				.calc__title-md.calc__title--blue Какие бывают налоговые вычеты
+
+				p Существует такие виды налоговых вычетов – стандартные, социальные, имущественные, вычеты по ценным бумагам и индивидуальным инвестиционным счетам и профессиональные. Стандартные вычеты предоставляются при наличии определенных условий – доход налогоплательщика не превышает какую-либо сумму, у налогоплательщика есть дети и так далее. Социальные вычеты предоставляются в случае, если налогоплательщик понес определенные расходы – оплатил лечение или обучение и так далее. Имущественные налоговые вычеты предоставляются, например, в случае, если налогоплательщик продавал имущество или покупал недвижимость и дают право, в том числе, и на возврат процентов по ипотечному кредиту. Вычеты по ценным бумагам и индивидуальным инвестиционным счетам предоставляются в определенных ситуациях при операциях с ценными бумагами и при использовании индивидуальных инвестиционных счетов. Профессиональные вычеты предоставляются определенным категориям налогоплательщиков, например, авторам художественных произведений.
+
+				.calc__title-md.calc__title--blue Как подсчитать вычет и налог к возврату
+
+				p Сумма вычета уменьшает так называемую налогооблагаемую базу, то есть ту сумму, с которой у Вас удержали налог. Получить от государства в виде возвращенных налогов Вы сможете не сумму вычета, а 13% от суммы вычета, то есть то, что было заплачено в виде налогов. При этом Вы не сможете получить больше, чем заплатили налогов. Например, 13% от 100 рублей, это 13 рублей. Вы сможете получить 13 рублей, только если заплатили за год 13 рублей налогов. Если Вы заплатили налогов меньше, то сможете вернуть только то, что заплатили. Также при расчете нужно учитывать лимит вычета, установленный законом. Если лимит вычета при покупке недвижимости (без учета процентов) составляет 2 млн рублей, ваш вычет не может быть больше, а налог к возврату не может быть больше, чем 13% от лимита вычета, то есть 260 000 рублей. Вернуть можно только налоги, уплаченные по ставке 13%.
+
+				.calc__title-md.calc__title--blue Как получить вычет с Налогией
+
+				p На веб-сайте Налогия Вы найдете все для того, чтобы получить вычет. Теперь не нужно обращаться к консультантам. Вы сами сможете все сделать гораздо быстрее и дешевле:
+				
+				ol
+					li  Заполнить декларацию на веб-сайте Налогия. С нами правильно заполнить декларацию будет быстро и просто.
+					li  Приложить к декларации документы по перечню. Перечень и шаблоны заявлений можно бесплатно скачать в разделе веб-сайта «Полезное» / «Документы для вычета».
+					li  Отнести документы в инспекцию и получить деньги. Подготовленные документы Вам останется только отнести в инспекцию и получить деньги.
+				p Чтобы перейти к заполнению налоговой декларации 3-НДФЛ для возврата налога в интернет-программе "Налогия .Декларация" на нашем веб-сайте, нажмите, пожалуйста, кнопку Далее ниже.
+		.row
+			.m-calc__recom
+				.calc__title-lg Персональная рекомендация по возврату
+				p Ответьте, пожалуйста, на вопросы ниже. После этого Налогия даст Вам персональные рекомендации актуальные на сегодняшний день: есть ли у Вас уже право на возврат налогов по покупке жилья и процентам по ипотеке, за какие годы можно подавать документы, когда нужно подавать документы и куда.
+				.m-calc__row-radio-title Ваш тип жилья: 
+
+				.m-calc__row-radio-wrap
+					.m-calc__row-radio
+						input(type="radio" name="type")
+						label Вы купили (или инвестировали в строящуюся) квартиру. 
+					.m-calc__row-radio
+						input(type="radio" name="type")
+						label Любой другой вариант: Вы купили или построили дом, 	купили земельный участок и так далее.
+
+				.m-calc__row-radio-wrap
+					.m-calc__row-radio-title Вы пенсионер? : 
+					.m-calc__row-radio
+						input(type="radio" name="oldman")
+						label Да, я пенсионер (работающий или не работающий).  
+					.m-calc__row-radio
+						input(type="radio" name="oldman")
+						label Нет, я не пенсионер. 
+		.row
+			.col-md-6.col-sm-12.col-xs-12
+					.calc__title-lg Контакты
+					p Москва (495) 646 8905
+					p Санкт-Петербург (812) 643 4225
+					p Россия 8 800 505 8905 (бесплатно)
+			.col-md-6.col-sm-12.col-xs-12
+					.calc__title-lg Заполнить декларацию 
+					p Выберите, пожалуйста, год и внесите Ваши доходы и расходы (округленные до рублей) за этот год. Калькулятор рассчитает примерные цифры, основываясь на допущениях. Калькулятор 
+	//Section Calc-end
+	
+
+
+
+
+	//Section How work
+	.container-fluid.m-section.m-section-work
+		.container
+			.row
+				.m-section__title Как это работает
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-work__el
+						.m-section-work__img
+							img(src="img/n-icon-quest.png", alt="")
+						.m-section-work__text Вы вносите свои данные,консультанту можно задать любой вопрос
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-work__el
+						.m-section-work__img
+							img(src="img/n-icon-form.png", alt="")
+						.m-section-work__text Веб-сайт сформирует Вам правильную декларацию
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-work__el
+						.m-section-work__img.lch
+							img(src="img/n-icon-print.png", alt="")
+						.m-section-work__text Вы можете распечатать готовую декларацию или подать онлайн
+	
+	//Section Chouse
+	.container-fluid.m-section.m-section-chouse
+		.container
+			.row
+				.m-section__title Почему нужно выбрать нас
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-chouse__el
+						.m-section-chouse__img
+							img(src="img/n-icon-check.png", alt="")
+						.m-section-chouse__text Удобство и поддержка
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-chouse__el
+						.m-section-chouse__img
+							img(src="img/n-icon-defend.png", alt="")
+						.m-section-chouse__text Надежность и качество
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-chouse__el
+						.m-section-chouse__img
+							img(src="img/n-icon-pay.png", alt="")
+						.m-section-chouse__text Низкие цены
+			.row
+				.col-md-12.text-center.m-section-chouse__chouse
+					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
+			.m-section-chouse__footer 
+				|А здесь можно заполнить декларацию за 
+				a(href="#") 2013 
+				| или за 
+				a(href="#") 2014 
+				|год
+
+	//Section video
+	.container-fluid.m-section.m-section-video.main-video
+		.container
+			.row(style="text-align: center")
+				.m-section__title С нами декларация и возвраты - это просто!
+				.frame
+					.frame-inner
+						#main-video-div
+							img(class="play-video" src="http://nalogia.ru/images/main/play.png" data-pin-nopin="true")
+							img(src="img/main_preview.jpg" style="border: 1px solid #cccccc;width: 100%")
+
+	//Section review
+	.container-fluid.m-section.m-section-review
+		.container
+			.row
+				.m-section__title Отзывы наших клиентов
+				.col-md-4
+					.m-section-review__text ...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
+					.m-section-review__name Иван, Кисловодск
+				.col-md-4
+					.m-section-review__text ....Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
+					.m-section-review__name Иван, Кисловодск
+				.col-md-4
+					.m-section-review__text ...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
+					.m-section-review__name Иван, Кисловодск
+			.row
+				.col-md-12.text-center.m-section-chouse__chouse
+					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
+			.m-section-chouse__footer 
+				|А здесь можно заполнить декларацию за 
+				a(href="#") 2013 
+				| или за 
+				a(href="#") 2014 
+				|год
+	//Section review
+	.container-fluid.m-section.m-section-variant
+		.container
+			.row
+				.m-section__title Варианты работы
+				.col-md-6.col-sm-6
+					.m-section-variant-el
+						.m-section-variant-el__content
+							.m-section-variant-el__title Подготовка декларации для возврата
+							.m-section-variant-el__val 499 <span> руб </span>
+						.m-section-variant-el__footer Помогаем Вам быстро и правильно подготовить декларацию
+				.col-md-6.col-sm-6
+					.m-section-variant-el
+						.m-section-variant-el__content
+							.m-section-variant-el__title Онлайн возврат налога
+							.m-section-variant-el__val 2 999 <span> руб </span> 
+						.m-section-variant-el__footer Помогаем Вам подать документы на возврат, не выходя из дома
+			.row
+				.col-md-12.text-center
+					.m-section-variant__text Мы помогли подготовить и подать декларации и другие документы уже <strong>300 445 </strong> пользователям
+			.row
+				.col-md-12.text-center.m-section-chouse__chouse
+					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
+
+//Include footer
+include ./block_html/_script.jade
+

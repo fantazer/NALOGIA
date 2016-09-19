@@ -1,7 +1,314 @@
-<!DOCTYPE html>
-<html lang="en"></html>
-<head>
-	<meta charset="UTF-8"/>
-	<title>Document</title>
-</head>
-<body></body>
+
+<!--Include style--><!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<title>Document</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/vendor.css">
+		<!--Delete this-->
+		<link rel="stylesheet" href="http://webfonts.ru/import/opensans.css"/>
+		<link rel="stylesheet" href="css/add-styles.css"/>
+		<!--Delete this-->
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+</html>
+<body>
+	<!--Include header-->
+	<!--Section Calc-->
+	<div class="container m-calc__content">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="calc__title-lg">Калькулятор налоговых вычетов</div>
+				<p>Выберите, пожалуйста, год и внесите Ваши доходы и расходы (округленные до рублей) за этот год. Калькулятор рассчитает примерные цифры, основываясь на допущениях. Калькулятор рассчитает итоговую сумму налога к возврату (а не сумму налогового вычета, на которую уменьшается налоговая база). Все итоговые поля рассчитывают результат для данного, выбранного года, кроме последнего поля (внизу) "Всего налогов к возврату, переносимых на следующий год".</p>
+				<div class="m-calc__wrap">
+					<form action="#">
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Год, в котором были доходы и расходы</div>
+							<div class="m-calc__input">
+								<select>#(name="")
+									<option>2016</option>
+									<option>2015</option>
+									<option>2014</option>
+								</select>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Заработок за год до вычета налога (гросс), руб</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Заработок за год после вычета налогов (нетто), руб</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__divider"></div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Приобретение жилья, руб.1</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Проценты по кредиту на жилье (ипотеке), руб.1</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Свое обучение, руб.2</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Лечение и покупкалекарств, руб.2</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Дорогое лечениеи лекарства(особый перечень), руб</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title">Обучение первого ребенка, руб</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__divider"></div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title m-calc__row-title--bold">Всего налоговк возврату в этом году, руб</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+						<div class="m-calc__row">
+							<div class="m-calc__row-title m-calc__row-title--bold">Всего налоговк возврату, переносимых на следующий год, руб</div>
+							<div class="m-calc__input">
+								<input type="text"/>
+								<input type="text"/>
+							</div>
+						</div>
+					</form>
+				</div>
+				<p>Примечания:</p>
+				<p>1) Если Вы уже использовали часть вычета по жилью, вводите не общую стоимость и сумму процентов, а значения за вычетом уже предоставленного в прошлых периодах вычета. Если у Вас, кроме жилья, есть вычеты по обучению или лечению, сначала будут рассчитаны вычеты по лечению и обучению, а вычеты по жилью будут рассчитаны как перенесенные на следующий год. По жилью, оформленному до 2014 года, вычет по процентам по ипотеке предоставляется без ограничения, а по жилью, оформленному начиная с 2014 года (включая 2014 год), лимит налога к возврату по процентам по ипотеке составляет 390 000 рублей. </p>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="calc__title-lg">Калькулятор налоговых вычетов</div>
+				<div class="calc__title-md calc__title--blue">Какие бывают налоговые вычеты</div>
+				<p>Существует такие виды налоговых вычетов – стандартные, социальные, имущественные, вычеты по ценным бумагам и индивидуальным инвестиционным счетам и профессиональные. Стандартные вычеты предоставляются при наличии определенных условий – доход налогоплательщика не превышает какую-либо сумму, у налогоплательщика есть дети и так далее. Социальные вычеты предоставляются в случае, если налогоплательщик понес определенные расходы – оплатил лечение или обучение и так далее. Имущественные налоговые вычеты предоставляются, например, в случае, если налогоплательщик продавал имущество или покупал недвижимость и дают право, в том числе, и на возврат процентов по ипотечному кредиту. Вычеты по ценным бумагам и индивидуальным инвестиционным счетам предоставляются в определенных ситуациях при операциях с ценными бумагами и при использовании индивидуальных инвестиционных счетов. Профессиональные вычеты предоставляются определенным категориям налогоплательщиков, например, авторам художественных произведений.</p>
+				<div class="calc__title-md calc__title--blue">Как подсчитать вычет и налог к возврату</div>
+				<p>Сумма вычета уменьшает так называемую налогооблагаемую базу, то есть ту сумму, с которой у Вас удержали налог. Получить от государства в виде возвращенных налогов Вы сможете не сумму вычета, а 13% от суммы вычета, то есть то, что было заплачено в виде налогов. При этом Вы не сможете получить больше, чем заплатили налогов. Например, 13% от 100 рублей, это 13 рублей. Вы сможете получить 13 рублей, только если заплатили за год 13 рублей налогов. Если Вы заплатили налогов меньше, то сможете вернуть только то, что заплатили. Также при расчете нужно учитывать лимит вычета, установленный законом. Если лимит вычета при покупке недвижимости (без учета процентов) составляет 2 млн рублей, ваш вычет не может быть больше, а налог к возврату не может быть больше, чем 13% от лимита вычета, то есть 260 000 рублей. Вернуть можно только налоги, уплаченные по ставке 13%.</p>
+				<div class="calc__title-md calc__title--blue">Как получить вычет с Налогией</div>
+				<p>На веб-сайте Налогия Вы найдете все для того, чтобы получить вычет. Теперь не нужно обращаться к консультантам. Вы сами сможете все сделать гораздо быстрее и дешевле:</p>
+				<ol>
+					<li> Заполнить декларацию на веб-сайте Налогия. С нами правильно заполнить декларацию будет быстро и просто.</li>
+					<li> Приложить к декларации документы по перечню. Перечень и шаблоны заявлений можно бесплатно скачать в разделе веб-сайта «Полезное» / «Документы для вычета».</li>
+					<li> Отнести документы в инспекцию и получить деньги. Подготовленные документы Вам останется только отнести в инспекцию и получить деньги.</li>
+				</ol>
+				<p>Чтобы перейти к заполнению налоговой декларации 3-НДФЛ для возврата налога в интернет-программе "Налогия .Декларация" на нашем веб-сайте, нажмите, пожалуйста, кнопку Далее ниже.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="m-calc__recom">
+				<div class="calc__title-lg">Персональная рекомендация по возврату</div>
+				<p>Ответьте, пожалуйста, на вопросы ниже. После этого Налогия даст Вам персональные рекомендации актуальные на сегодняшний день: есть ли у Вас уже право на возврат налогов по покупке жилья и процентам по ипотеке, за какие годы можно подавать документы, когда нужно подавать документы и куда.</p>
+				<div class="m-calc__row-radio-title">Ваш тип жилья: </div>
+				<div class="m-calc__row-radio-wrap">
+					<div class="m-calc__row-radio">
+						<input type="radio" name="type"/>
+						<label>Вы купили (или инвестировали в строящуюся) квартиру. </label>
+					</div>
+					<div class="m-calc__row-radio">
+						<input type="radio" name="type"/>
+						<label>Любой другой вариант: Вы купили или построили дом, 	купили земельный участок и так далее.</label>
+					</div>
+				</div>
+				<div class="m-calc__row-radio-wrap">
+					<div class="m-calc__row-radio-title">Вы пенсионер? : </div>
+					<div class="m-calc__row-radio">
+						<input type="radio" name="oldman"/>
+						<label>Да, я пенсионер (работающий или не работающий).  </label>
+					</div>
+					<div class="m-calc__row-radio">
+						<input type="radio" name="oldman"/>
+						<label>Нет, я не пенсионер. </label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="calc__title-lg">Контакты</div>
+				<p>Москва (495) 646 8905</p>
+				<p>Санкт-Петербург (812) 643 4225</p>
+				<p>Россия 8 800 505 8905 (бесплатно)</p>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="calc__title-lg">Заполнить декларацию </div>
+				<p>Выберите, пожалуйста, год и внесите Ваши доходы и расходы (округленные до рублей) за этот год. Калькулятор рассчитает примерные цифры, основываясь на допущениях. Калькулятор </p>
+			</div>
+		</div>
+	</div>
+	<!--Section Calc-end-->
+	<!--Section How work-->
+	<div class="container-fluid m-section m-section-work">
+		<div class="container">
+			<div class="row">
+				<div class="m-section__title">Как это работает</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="m-section-work__el">
+						<div class="m-section-work__img"><img src="img/n-icon-quest.png" alt=""/></div>
+						<div class="m-section-work__text">Вы вносите свои данные,консультанту можно задать любой вопрос</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="m-section-work__el">
+						<div class="m-section-work__img"><img src="img/n-icon-form.png" alt=""/></div>
+						<div class="m-section-work__text">Веб-сайт сформирует Вам правильную декларацию</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="m-section-work__el">
+						<div class="m-section-work__img lch"><img src="img/n-icon-print.png" alt=""/></div>
+						<div class="m-section-work__text">Вы можете распечатать готовую декларацию или подать онлайн</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Section Chouse-->
+	<div class="container-fluid m-section m-section-chouse">
+		<div class="container">
+			<div class="row">
+				<div class="m-section__title">Почему нужно выбрать нас</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="m-section-chouse__el">
+						<div class="m-section-chouse__img"><img src="img/n-icon-check.png" alt=""/></div>
+						<div class="m-section-chouse__text">Удобство и поддержка</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="m-section-chouse__el">
+						<div class="m-section-chouse__img"><img src="img/n-icon-defend.png" alt=""/></div>
+						<div class="m-section-chouse__text">Надежность и качество</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="m-section-chouse__el">
+						<div class="m-section-chouse__img"><img src="img/n-icon-pay.png" alt=""/></div>
+						<div class="m-section-chouse__text">Низкие цены</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center m-section-chouse__chouse">
+					<div class="btn btn-primary btn-nalogia">Заполнить декларацию за 2016 год</div>
+				</div>
+			</div>
+			<div class="m-section-chouse__footer">
+				 
+				А здесь можно заполнить декларацию за <a href="#">2013 </a>или за <a href="#">2014 </a>год
+			</div>
+		</div>
+	</div>
+	<!--Section video-->
+	<div class="container-fluid m-section m-section-video main-video">
+		<div class="container">
+			<div style="text-align: center" class="row">
+				<div class="m-section__title">С нами декларация и возвраты - это просто!</div>
+				<div class="frame">
+					<div class="frame-inner">
+						<div id="main-video-div"><img src="http://nalogia.ru/images/main/play.png" data-pin-nopin="true" class="play-video"/><img src="img/main_preview.jpg" style="border: 1px solid #cccccc;width: 100%"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Section review-->
+	<div class="container-fluid m-section m-section-review">
+		<div class="container">
+			<div class="row">
+				<div class="m-section__title">Отзывы наших клиентов</div>
+				<div class="col-md-4">
+					<div class="m-section-review__text">...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...</div>
+					<div class="m-section-review__name">Иван, Кисловодск</div>
+				</div>
+				<div class="col-md-4">
+					<div class="m-section-review__text">....Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...</div>
+					<div class="m-section-review__name">Иван, Кисловодск</div>
+				</div>
+				<div class="col-md-4">
+					<div class="m-section-review__text">...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...</div>
+					<div class="m-section-review__name">Иван, Кисловодск</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center m-section-chouse__chouse">
+					<div class="btn btn-primary btn-nalogia">Заполнить декларацию за 2016 год</div>
+				</div>
+			</div>
+			<div class="m-section-chouse__footer">
+				 
+				А здесь можно заполнить декларацию за <a href="#">2013 </a>или за <a href="#">2014 </a>год
+			</div>
+		</div>
+	</div>
+	<!--Section review-->
+	<div class="container-fluid m-section m-section-variant">
+		<div class="container">
+			<div class="row">
+				<div class="m-section__title">Варианты работы</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="m-section-variant-el">
+						<div class="m-section-variant-el__content">
+							<div class="m-section-variant-el__title">Подготовка декларации для возврата</div>
+							<div class="m-section-variant-el__val">499 <span> руб </span></div>
+						</div>
+						<div class="m-section-variant-el__footer">Помогаем Вам быстро и правильно подготовить декларацию</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="m-section-variant-el">
+						<div class="m-section-variant-el__content">
+							<div class="m-section-variant-el__title">Онлайн возврат налога</div>
+							<div class="m-section-variant-el__val">2 999 <span> руб </span> </div>
+						</div>
+						<div class="m-section-variant-el__footer">Помогаем Вам подать документы на возврат, не выходя из дома</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="m-section-variant__text">Мы помогли подготовить и подать декларации и другие документы уже <strong>300 445 </strong> пользователям</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center m-section-chouse__chouse">
+					<div class="btn btn-primary btn-nalogia">Заполнить декларацию за 2016 год</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!--Include footer-->
+<script src="js/combined.js"></script>
+<script src="js/script.js"></script>
