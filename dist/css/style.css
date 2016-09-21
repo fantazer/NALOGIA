@@ -547,7 +547,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-calc__content p {
   color: #333;
 }
-.m-calc__content input {
+.m-calc__content input[type="text"] {
   background-color: #fff;
   border: 1px solid #e6e9ed;
 }
@@ -559,7 +559,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 @media only screen and (max-width: 768px) {
   .calc__title-lg {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 10px;
     font-weight: 700;
   }
@@ -646,6 +646,116 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     padding: 20px;
   }
 }
+.calc__title-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .calc__title-row {
+    margin-bottom: 10px;
+  }
+}
+.calc__title-row .m-icon {
+  margin-right: 20px;
+}
+.calc__title-row .calc__title-lg {
+  margin-bottom: 0;
+  width: 100%;
+}
+.m-icon {
+  color: #337ab7;
+  display: inline-block;
+  font-size: 60px;
+  color: #337ab7;
+}
+@media only screen and (max-width: 768px) {
+  .m-icon {
+    font-size: 30px;
+  }
+}
+.calc__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.calc__footer .calc__title-lg {
+  margin-bottom: 20px;
+}
+.calc__footer-icon {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .m-calc-col {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .calc__footer-col {
+    margin-bottom: 20px;
+  }
+}
+.calc__footer-info {
+  width: -webkit-calc(100% - 65px);
+  width: calc(100% - 65px);
+}
 /*
  * ADD STYLE calc - end
+ */
+/*
+ * ADD FONT
+ */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?l9dcwz");
+  src: url("../fonts/icomoon.eot?l9dcwz#iefix") format('embedded-opentype'), url("../fonts/icomoon.ttf?l9dcwz") format('truetype'), url("../fonts/icomoon.woff?l9dcwz") format('woff'), url("../fonts/icomoon.svg?l9dcwz#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-m-icon-calc:before {
+  content: "\e900";
+}
+.icon-m-icon-paper:before {
+  content: "\e901";
+}
+.icon-m-icon-people:before {
+  content: "\e902";
+}
+.icon-m-icon-pos:before {
+  content: "\e903";
+}
+.icon-m-icon-money:before {
+  content: "\e904";
+}
+/*
+ * ADD FONT -end
  */

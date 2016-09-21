@@ -5,6 +5,7 @@
 @import "icon/sprite.css"
 //@import "part.styl"
 
+
 rupture.scale = 0 400px 600px 780px 960px 1300px
 rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 .m-top-baner
@@ -361,7 +362,7 @@ m_blue = #337ab7
 		border 1px solid #e6e9ed
 .calc__title-lg
 	+below(768px)
-		font-size 22px
+		font-size 16px
 		margin-bottom 10px
 		font-weight 700 
 	color m_black
@@ -415,6 +416,91 @@ m_blue = #337ab7
 	margin 40px 0
 	padding 40px
 	border 2px solid m_blue
+.calc__title-row
+	+below(768px)
+		margin-bottom 10px
+	flex(mid)
+	justify-content flex-start
+	margin-bottom 30px
+	.m-icon
+		margin-right 20px
+	.calc__title-lg
+		margin-bottom 0
+		width 100%
+.m-icon
+	+below(768px)
+		font-size 30px
+	color m_blue
+	display inline-block
+	font  normal normal normal 
+	font-size 60px
+	color m_blue
+.calc__footer
+	f()
+	.calc__title-lg
+		margin-bottom 20px
+.calc__footer-icon
+	margin-right 20px
+.m-calc-col
+	+below(1024px)
+		margin-bottom 20px
+.calc__footer-col
+	+below(768px)
+		margin-bottom 20px
+.calc__footer-info
+	width calc(100% - 65px)
+	
  /*
  * ADD STYLE calc - end
  */
+ 	
+  /*
+ * ADD FONT
+ */
+ 	
+ @font-face {
+   font-family: 'icomoon';
+   src:  url('../fonts/icomoon.eot?l9dcwz');
+   src:  url('../fonts/icomoon.eot?l9dcwz#iefix') format('embedded-opentype'),
+     url('../fonts/icomoon.ttf?l9dcwz') format('truetype'),
+     url('../fonts/icomoon.woff?l9dcwz') format('woff'),
+     url('../fonts/icomoon.svg?l9dcwz#icomoon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ [class^="icon-"], [class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icomoon' !important;
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ .icon-m-icon-calc:before {
+   content: "\e900";
+ }
+ .icon-m-icon-paper:before {
+   content: "\e901";
+ }
+ .icon-m-icon-people:before {
+   content: "\e902";
+ }
+ .icon-m-icon-pos:before {
+   content: "\e903";
+ }
+ .icon-m-icon-money:before {
+  content: "\e904";
+}
+
+  /*
+ * ADD FONT -end
+ */
+ 	

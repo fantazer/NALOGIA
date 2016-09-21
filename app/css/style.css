@@ -307,8 +307,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-section-variant-el__content {
   padding: 40px 60px;
   background-color: #e5e9ed;
-  border-radius: 8px 8px 0px 0px;
-  box-shadow: 0 0 17px rgba(0,28,53,0.1);
+  -webkit-border-radius: 8px 8px 0px 0px;
+          border-radius: 8px 8px 0px 0px;
+  -webkit-box-shadow: 0 0 17px rgba(0,28,53,0.1);
+          box-shadow: 0 0 17px rgba(0,28,53,0.1);
   height: 290px;
 }
 @media only screen and (max-width: 768px) {
@@ -349,7 +351,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  border-radius: 0px 0px 8px 8px;
+  -webkit-border-radius: 0px 0px 8px 8px;
+          border-radius: 0px 0px 8px 8px;
 }
 @media only screen and (max-width: 768px) {
   .m-section-variant-el__footer {
@@ -384,7 +387,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-wrap-slider {
-  box-shadow: 0px 3px 8px #e3e3e3;
+  -webkit-box-shadow: 0px 3px 8px #e3e3e3;
+          box-shadow: 0px 3px 8px #e3e3e3;
 }
 .m-wrap-slider {
   *zoom: 1;
@@ -494,9 +498,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .owl-dots {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -40px;
   position: relative;
   z-index: 2000;
@@ -507,12 +520,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .owl-dot {
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   margin: 5px;
   width: 15px;
   height: 15px;
   background: #fff;
-  box-shadow: inset 0px 1px 1px;
+  -webkit-box-shadow: inset 0px 1px 1px;
+          box-shadow: inset 0px 1px 1px;
 }
 @media only screen and (max-width: 480px) {
   .owl-dot {
@@ -544,7 +559,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 @media only screen and (max-width: 768px) {
   .calc__title-lg {
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 10px;
     font-weight: 700;
   }
@@ -555,9 +570,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin-bottom: 40px;
 }
 .m-calc__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 .m-calc__row-title {
@@ -589,6 +613,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin: 20px 0;
 }
 .m-calc__row-radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .m-calc__row-radio input {
@@ -619,6 +646,116 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     padding: 20px;
   }
 }
+.calc__title-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .calc__title-row {
+    margin-bottom: 10px;
+  }
+}
+.calc__title-row .m-icon {
+  margin-right: 20px;
+}
+.calc__title-row .calc__title-lg {
+  margin-bottom: 0;
+  width: 100%;
+}
+.m-icon {
+  color: #337ab7;
+  display: inline-block;
+  font-size: 60px;
+  color: #337ab7;
+}
+@media only screen and (max-width: 768px) {
+  .m-icon {
+    font-size: 30px;
+  }
+}
+.calc__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.calc__footer .calc__title-lg {
+  margin-bottom: 20px;
+}
+.calc__footer-icon {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .m-calc-col {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .calc__footer-col {
+    margin-bottom: 20px;
+  }
+}
+.calc__footer-info {
+  width: -webkit-calc(100% - 65px);
+  width: calc(100% - 65px);
+}
 /*
  * ADD STYLE calc - end
+ */
+/*
+ * ADD FONT
+ */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?l9dcwz");
+  src: url("../fonts/icomoon.eot?l9dcwz#iefix") format('embedded-opentype'), url("../fonts/icomoon.ttf?l9dcwz") format('truetype'), url("../fonts/icomoon.woff?l9dcwz") format('woff'), url("../fonts/icomoon.svg?l9dcwz#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-m-icon-calc:before {
+  content: "\e900";
+}
+.icon-m-icon-paper:before {
+  content: "\e901";
+}
+.icon-m-icon-people:before {
+  content: "\e902";
+}
+.icon-m-icon-pos:before {
+  content: "\e903";
+}
+.icon-m-icon-money:before {
+  content: "\e904";
+}
+/*
+ * ADD FONT -end
  */
