@@ -556,12 +556,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 35px;
+  line-height: 32px;
 }
 @media only screen and (max-width: 768px) {
   .calc__title-lg {
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: 700;
+    line-height: 16px;
   }
 }
 .m-calc__wrap {
