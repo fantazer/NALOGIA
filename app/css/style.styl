@@ -273,9 +273,13 @@ rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 .m-wrap-slider
 	bsh()
 .m-wrap-slider
+	+below(480px)
+		height 200px
 	center(1366px)
 	position relative
 	width 100%
+	height 100%
+	height 400px
 	+above(1366px)
 		width 1366px
 .m-wrap-slider__content
