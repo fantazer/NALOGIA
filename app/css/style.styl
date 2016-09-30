@@ -261,6 +261,7 @@ rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 	font-weight 300
 	margin 0 auto
 	width 60%
+	height 100px
 /*
  * ADD STYLE SLIDER
  */
@@ -490,23 +491,327 @@ m_blue = #337ab7
    -moz-osx-font-smoothing: grayscale;
  }
 
- .icon-m-icon-calc:before {
-   content: "\e900";
- }
- .icon-m-icon-paper:before {
-   content: "\e901";
- }
- .icon-m-icon-people:before {
-   content: "\e902";
- }
- .icon-m-icon-pos:before {
-   content: "\e903";
- }
- .icon-m-icon-money:before {
+.icon-icon-partner-7:before {
+  content: "\e905";
+}
+.icon-icon-partner-2:before {
+  content: "\e906";
+}
+.icon-icon-partner-3:before {
+  content: "\e907";
+}
+.icon-icon-partner-4:before {
+  content: "\e908";
+}
+.icon-icon-partner-1:before {
+  content: "\e909";
+}
+.icon-m-icon-money:before {
   content: "\e904";
 }
+.icon-m-icon-calc:before {
+  content: "\e900";
+}
+.icon-m-icon-paper:before {
+  content: "\e901";
+}
+.icon-m-icon-people:before {
+  content: "\e902";
+}
+.icon-m-icon-pos:before {
+  content: "\e903";
+}
 
-  /*
- * ADD FONT -end
- */
  	
+/*
+ * add style partner
+ */
+ 
+ .head-partner
+	bgi("partner-bg.jpg")
+	background-size cover
+	padding 55px
+	.container
+		height 560px 
+.head-partner__baner
+	width 90%
+	height 100%
+	padding 50px 70px
+	flex(mid)
+	fl()
+	fw()
+	margin 0 auto
+.m-cont-coner
+	position relative
+.m-coner-one
+	border-top 1px solid white
+	border-left 1px solid white
+	left 0px
+	top 0px
+.m-coner-two
+	border-bottom 1px solid white
+	border-left 1px solid white
+	left 0px
+	bottom 0
+.m-coner-three
+	border-top 1px solid white
+	border-right 1px solid white
+	right 0px
+	top 0px
+.m-coner-four
+	border-right 1px solid white
+	border-bottom 1px solid white
+	right 0px
+	bottom 0px
+.m-coner-el
+	position absolute
+	width 60px
+	height 60px
+.head-partner__title
+	up()
+	color white
+	font-family "Open Sans"
+	font-size 36px
+	text-align center
+	margin-bottom 50px
+	font-weight 600 
+.head-partner__title-sub
+	color white
+	font-family "Open Sans"
+	font-size 36px
+	font-weight 300 
+	text-align center
+	margin-bottom 30px
+.head-partner__logos
+	flex(mid)
+	margin-bottom 40px
+.head-partner__logos-el
+	&:nth-child(1)
+		margin-right 30%
+.head-partner__btn
+	display inline-block
+	border 2px solid white
+	padding 15px 70px
+	color white
+	font-size 18px
+	&:hover
+		color white
+		text-decoration none
+.partner-solution__el
+	flex(mid)
+	justify-content  flex-start
+	margin-bottom 30px
+.partner-solution__icon
+	.m-cont-coner
+		width 60px
+		height 60px	
+		flex(mid)
+		color #71c8f1
+		font-family "Open Sans"
+		font-weight 300 
+		font-size 30px
+		margin-right 20px
+	.m-coner-el
+		border-color #71c8f1
+		width 10px
+		height 10px
+.partner-solution__text
+	color #3e4852
+	font-family "Open Sans"
+	font-size 24px
+	font-weight 400
+.partner-diveider
+	opacity 0.2
+	border 1px dashed #3e4852
+	margin 45px 0
+.partner-solution__wraper
+	flex(mid)
+.partner-solution
+	width 80%
+.partner-solution__btn
+	color white
+	font-family "Open Sans"
+	font-size 30px
+	font-weight 600
+	text-transform uppercase
+	display inline-block
+	background #FFF 
+	background #71c8f1
+	width 100%
+	text-align center 
+	padding 30px
+	border-radius 5px
+	&:hover
+		text-decoration none
+.m-section-solution
+	background-color #f7f8fa
+.section-parnter-title
+	margin 0 auto
+	margin-bottom 70px
+	color #3e4852
+	font-family "Open Sans"
+	font-size 36px
+	font-weight 600
+	text-transform uppercase		
+	text-align center
+.parnter-service__main-title 
+	
+	width 90%
+	
+.partner-service__el
+	f()
+	margin-bottom 100px
+.partner-service__icon
+	margin-right 10px
+.partner-service__title
+	font-size 60px
+	font-size 24px
+	font-family Open Sans
+	color #3e4852
+	margin-bottom 10px
+
+.pertner-work__title
+	color #3e4852
+	font-family "Open Sans"
+	font-size 36px
+	font-weight 600
+	text-transform uppercase		
+	text-align center
+	width 90%
+	margin 0 auto
+	margin-bottom 90px
+.m-section-pertner-work
+	background #f7f8fa 
+.pertner-work__el
+	f()
+	.m-cont-coner
+		width 140px
+		height 140px
+		font-size 70px
+		flex(mid)
+		font-family "Open Sans"
+		font-weight 400 
+.pertner-work__icon
+	flex(mid)
+	.m-coner-el
+		border-color blue
+		width 30px
+		height 30px
+		
+	color #71c8f1
+.pertner-work__icon
+	width 40%
+.pertner-work__info
+	width 60%
+	flex(mid)
+	f()
+	fl()
+	align-items flex-start
+.pertner-work__el
+	margin-bottom 60px
+	&:nth-child(3)
+		.pertner-work__icon
+			order 2
+		.m-section-work__info
+			order 1
+	&:nth-child(5)
+		.pertner-work__icon
+			order 2
+		.m-section-work__info
+			order 1
+.pertner-work__el-title
+	font-size 24px
+	font-family "Open Sans"
+	margin-bottom 10px
+.m-partner-price__wraper
+	width 80%
+	margin 0 auto
+.m-partner-price__el
+	f()
+	padding-bottom 40px
+	padding-top 20px
+	border-bottom 1px dashed #e1dddd
+	.m-icon
+		font-size 80px
+.m-partner-price__btn
+	padding 5px 30px
+	background-color #72c8f0
+	border-radius 3px
+	color white
+.m-partner-price__icon
+	flex(mid)
+	fl()
+	fw()
+	width 30%
+	&:hover
+		text-decoration none
+.m-partner-price__info
+	width 70%
+	flex(mid)
+	align-items flex-start
+	fl()
+	fw()
+.m-partner-price__title
+	font-size 24px
+	font-family "Open Sans"
+	margin-bottom 10px
+.m-partner-price__sale
+	padding 60px
+	margin-top 40px
+	.m-coner-el
+		border-color #e5e5e5
+		width 40px
+		height 40px
+.m-partner-price__sale-title
+	font-family Open Sans
+	font-size 36px
+	color #72c8f0
+	text-align center
+	text-transform uppercase
+	margin-bottom 30px
+	font-weight 600 
+.m-partner-price__sale-sub-title
+	font-family Open Sans
+	font-size 32px
+	text-align center
+	color #3e4852
+	font-weight 300
+ .m-get-partner
+	bgi("partner-bg.jpg")
+	background-size cover
+	padding 55px
+	.container
+		height 460px 
+.m-get-partner__baner
+	height 100%
+	padding 50px 70px
+	flex(mid)
+	fl()
+	fw()
+.m-get-partner__title
+	text-transform uppercase
+	color white
+	font-family "Open Sans"
+	font-size 36px
+	text-align center
+	margin-bottom 50px
+	font-weight 600 
+.m-get-partner__title-sub
+	color white
+	font-family "Open Sans"
+	font-size 36px
+	font-weight 300 
+	text-align center
+	margin-bottom 30px
+.m-section-pertner-sub-title
+	text-align center
+	color #3e4852
+	font-weight 300
+	font-size 36px
+	font-family "Open Sans"
+	font-size 36px
+.section-parnter-title--blue
+	color #72c8f0
+ /*
+ * add style partner-end
+ */
