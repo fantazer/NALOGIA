@@ -307,8 +307,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-section-variant-el__content {
   padding: 40px 60px;
   background-color: #e5e9ed;
-  border-radius: 8px 8px 0px 0px;
-  box-shadow: 0 0 17px rgba(0,28,53,0.1);
+  -webkit-border-radius: 8px 8px 0px 0px;
+          border-radius: 8px 8px 0px 0px;
+  -webkit-box-shadow: 0 0 17px rgba(0,28,53,0.1);
+          box-shadow: 0 0 17px rgba(0,28,53,0.1);
   height: 290px;
 }
 @media only screen and (max-width: 768px) {
@@ -349,7 +351,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  border-radius: 0px 0px 8px 8px;
+  -webkit-border-radius: 0px 0px 8px 8px;
+          border-radius: 0px 0px 8px 8px;
 }
 @media only screen and (max-width: 768px) {
   .m-section-variant-el__footer {
@@ -385,7 +388,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-wrap-slider {
-  box-shadow: 0px 3px 8px #e3e3e3;
+  -webkit-box-shadow: 0px 3px 8px #e3e3e3;
+          box-shadow: 0px 3px 8px #e3e3e3;
 }
 .m-wrap-slider {
   *zoom: 1;
@@ -502,9 +506,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .owl-dots {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -40px;
   position: relative;
   z-index: 2000;
@@ -515,12 +528,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .owl-dot {
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   margin: 5px;
   width: 15px;
   height: 15px;
   background: #fff;
-  box-shadow: inset 0px 1px 1px;
+  -webkit-box-shadow: inset 0px 1px 1px;
+          box-shadow: inset 0px 1px 1px;
 }
 @media only screen and (max-width: 480px) {
   .owl-dot {
@@ -565,9 +580,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin-bottom: 40px;
 }
 .m-calc__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 .m-calc__row-title {
@@ -599,6 +623,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin: 20px 0;
 }
 .m-calc__row-radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .m-calc__row-radio input {
@@ -630,10 +657,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .calc__title-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 768px) {
@@ -660,6 +699,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .calc__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .calc__footer .calc__title-lg {
@@ -679,6 +721,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .calc__footer-info {
+  width: -webkit-calc(100% - 65px);
   width: calc(100% - 65px);
 }
 /*
@@ -707,6 +750,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-icon-partner-6:before {
+  content: "\e90a";
+}
+.icon-icon-partner-5:before {
+  content: "\e90b";
 }
 .icon-icon-partner-7:before {
   content: "\e905";
@@ -746,19 +795,53 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-size: cover;
   padding: 55px;
 }
+@media only screen and (max-width: 1024px) {
+  .head-partner {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .head-partner {
+    padding: 20px 10px;
+  }
+}
 .head-partner .container {
   height: 560px;
+}
+@media only screen and (max-width: 768px) {
+  .head-partner .container {
+    height: auto;
+  }
 }
 .head-partner__baner {
   width: 90%;
   height: 100%;
   padding: 50px 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .head-partner__baner {
+    padding: 10px;
+    width: 100%;
+  }
 }
 .m-cont-coner {
   position: relative;
@@ -799,6 +882,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   text-align: center;
   margin-bottom: 50px;
   font-weight: 600;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .head-partner__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 }
 .head-partner__title-sub {
   color: #fff;
@@ -808,14 +898,45 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   text-align: center;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .head-partner__title-sub {
+    font-size: 18px;
+  }
+}
 .head-partner__logos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 40px;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .head-partner__logos {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
 }
 .head-partner__logos-el:nth-child(1) {
   margin-right: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .head-partner__logos-el:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 .head-partner__btn {
   display: inline-block;
@@ -824,23 +945,51 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #fff;
   font-size: 18px;
 }
+@media only screen and (max-width: 768px) {
+  .head-partner__btn {
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
 .head-partner__btn:hover {
   color: #fff;
   text-decoration: none;
 }
 .partner-solution__el {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 30px;
 }
 .partner-solution__icon .m-cont-coner {
   width: 60px;
   height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #71c8f1;
   font-family: "Open Sans";
   font-weight: 300;
@@ -857,6 +1006,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 400;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .partner-solution__text {
+    font-size: 14px;
+  }
 }
 .partner-diveider {
   opacity: 0.2;
@@ -864,12 +1019,26 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin: 45px 0;
 }
 .partner-solution__wraper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .partner-solution {
   width: 80%;
+}
+@media only screen and (max-width: 768px) {
+  .partner-solution {
+    width: 100%;
+  }
 }
 .partner-solution__btn {
   color: #fff;
@@ -883,7 +1052,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 100%;
   text-align: center;
   padding: 30px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .partner-solution__btn {
+    font-size: 16px;
+  }
 }
 .partner-solution__btn:hover {
   text-decoration: none;
@@ -901,15 +1076,46 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   text-transform: uppercase;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .section-parnter-title {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
 .parnter-service__main-title {
   width: 90%;
 }
 .partner-service__el {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .partner-service__el {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
 }
 .partner-service__icon {
   margin-right: 10px;
+  width: 20%;
+}
+@media only screen and (max-width: 768px) {
+  .partner-service__icon {
+    text-align: center;
+    width: 100%;
+  }
+  .partner-service__icon i:before {
+    font-size: 80px;
+  }
 }
 .partner-service__title {
   font-size: 60px;
@@ -918,7 +1124,29 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #3e4852;
   margin-bottom: 10px;
 }
-.pertner-work__title {
+@media only screen and (max-width: 768px) {
+  .partner-service__title {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.partner-service__info {
+  width: 90%;
+}
+@media only screen and (max-width: 768px) {
+  .partner-service__info {
+    width: 100%;
+  }
+}
+.partner-service__text {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .partner-service__text {
+    text-align: center;
+  }
+}
+.partner-work__title {
   color: #3e4852;
   font-family: "Open Sans";
   font-size: 36px;
@@ -929,74 +1157,194 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin: 0 auto;
   margin-bottom: 90px;
 }
-.m-section-pertner-work {
+.m-section-partner-work {
   background: #f7f8fa;
 }
-.pertner-work__el {
+.partner-work__el {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
-.pertner-work__el .m-cont-coner {
+@media only screen and (max-width: 768px) {
+  .partner-work__el {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.partner-work__el .m-cont-coner {
   width: 140px;
   height: 140px;
   font-size: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Open Sans";
   font-weight: 400;
 }
-.pertner-work__icon {
+.partner-work__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #71c8f1;
 }
-.pertner-work__icon .m-coner-el {
+.partner-work__icon .m-coner-el {
   border-color: #0cacf2;
   width: 30px;
   height: 30px;
 }
-.pertner-work__icon {
+.partner-work__icon {
   width: 40%;
 }
-.pertner-work__info {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
+@media only screen and (max-width: 768px) {
+  .partner-work__icon {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
-.pertner-work__el {
+.partner-work__info {
+  width: 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .partner-work__info {
+    width: 100%;
+  }
+}
+.partner-work__text {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .partner-work__text {
+    text-align: center;
+  }
+}
+.partner-work__el {
   margin-bottom: 60px;
 }
-.pertner-work__el:nth-child(3) .pertner-work__icon {
-  order: 2;
+@media only screen and (max-width: 768px) {
+  .partner-work__el {
+    margin-bottom: 20px;
+  }
+  .partner-work__el .partner-work__icon {
+    -webkit-box-ordinal-group: 2 !important;
+    -webkit-order: 1 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  .partner-work__el .partner-work__info {
+    -webkit-box-ordinal-group: 3 !important;
+    -webkit-order: 2 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
 }
-.pertner-work__el:nth-child(3) .m-section-work__info {
-  order: 1;
+.partner-work__el:nth-child(3) .partner-work__icon {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
-.pertner-work__el:nth-child(5) .pertner-work__icon {
-  order: 2;
+.partner-work__el:nth-child(3) .partner-work__info {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
-.pertner-work__el:nth-child(5) .m-section-work__info {
-  order: 1;
+.partner-work__el:nth-child(5) .partner-work__icon {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
-.pertner-work__el-title {
+.partner-work__el:nth-child(5) .partner-work__info {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.partner-work__el-title {
   font-size: 24px;
   font-family: "Open Sans";
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .partner-work__el-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+  }
 }
 .m-partner-price__wraper {
   width: 80%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 768px) {
+  .m-partner-price__wraper {
+    width: 100%;
+  }
+}
 .m-partner-price__el {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 40px;
   padding-top: 20px;
   border-bottom: 1px dashed #e1dddd;
+}
+@media only screen and (max-width: 768px) {
+  .m-partner-price__el {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
 }
 .m-partner-price__el .m-icon {
   font-size: 80px;
@@ -1004,37 +1352,106 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-partner-price__btn {
   padding: 5px 30px;
   background-color: #72c8f0;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   color: #fff;
+  margin-top: 20px;
 }
 .m-partner-price__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   width: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .m-partner-price__icon {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.m-partner-price__icon i {
+  color: #71c8f1;
+}
+.m-partner-price__icon i:before {
+  font-size: 100px;
 }
 .m-partner-price__icon:hover {
   text-decoration: none;
 }
 .m-partner-price__info {
   width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-start;
-  flex-flow: column;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .m-partner-price__info {
+    width: 100%;
+  }
+}
+.m-partner-price__text {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .m-partner-price__text {
+    text-align: center;
+  }
 }
 .m-partner-price__title {
   font-size: 24px;
   font-family: "Open Sans";
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .m-partner-price__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+  }
+}
 .m-partner-price__sale {
   padding: 60px;
   margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .m-partner-price__sale {
+    padding: 20px 10px;
+  }
 }
 .m-partner-price__sale .m-coner-el {
   border-color: #e5e5e5;
@@ -1050,6 +1467,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin-bottom: 30px;
   font-weight: 600;
 }
+@media only screen and (max-width: 768px) {
+  .m-partner-price__sale-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
 .m-partner-price__sale-sub-title {
   font-family: Open Sans;
   font-size: 32px;
@@ -1057,22 +1480,60 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #3e4852;
   font-weight: 300;
 }
+@media only screen and (max-width: 768px) {
+  .m-partner-price__sale-sub-title {
+    font-size: 18px;
+  }
+}
 .m-get-partner {
   background: url("../img/partner-bg.jpg") no-repeat;
   background-size: cover;
   padding: 55px;
 }
+@media only screen and (max-width: 1024px) {
+  .m-get-partner {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .m-get-partner {
+    padding: 0;
+  }
+}
 .m-get-partner .container {
   height: 460px;
+}
+@media only screen and (max-width: 768px) {
+  .m-get-partner .container {
+    height: auto;
+  }
 }
 .m-get-partner__baner {
   height: 100%;
   padding: 50px 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .m-get-partner__baner {
+    padding: 20px;
+  }
 }
 .m-get-partner__title {
   text-transform: uppercase;
@@ -1083,6 +1544,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin-bottom: 50px;
   font-weight: 600;
 }
+@media only screen and (max-width: 768px) {
+  .m-get-partner__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
 .m-get-partner__title-sub {
   color: #fff;
   font-family: "Open Sans";
@@ -1091,13 +1558,23 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   text-align: center;
   margin-bottom: 30px;
 }
-.m-section-pertner-sub-title {
+@media only screen and (max-width: 768px) {
+  .m-get-partner__title-sub {
+    font-size: 18px;
+  }
+}
+.m-section-partner-sub-title {
   text-align: center;
   color: #3e4852;
   font-weight: 300;
   font-size: 36px;
   font-family: "Open Sans";
   font-size: 36px;
+}
+@media only screen and (max-width: 768px) {
+  .m-section-partner-sub-title {
+    font-size: 18px;
+  }
 }
 .section-parnter-title--blue {
   color: #72c8f0;

@@ -25,47 +25,22 @@ body
 						img(src="img/m-logo-nalogia.png", alt="")
 				a(href="#").head-partner__btn Попробуйте прямо сейчас!
 	
+
 	//section-solution
 	.container-fluid.m-section.m-section-solution
 		.container
 			.partner-solution__wraper
 				.partner-solution
-					.partner-solution__el
-						.partner-solution__icon
-							.m-cont-coner
-								.m-coner-el.m-coner-one
-								.m-coner-el.m-coner-two
-								.m-coner-el.m-coner-three
-								.m-coner-el.m-coner-four
-								span ?
-						.partner-solution__text  Вы получили доходы от заказчика?
-					.partner-solution__el
-						.partner-solution__icon
-							.m-cont-coner
-								.m-coner-el.m-coner-one
-								.m-coner-el.m-coner-two
-								.m-coner-el.m-coner-three
-								.m-coner-el.m-coner-four
-								span ?
-						.partner-solution__text  Вы должны их задекларировать и уплатить налог?
-					.partner-solution__el
-						.partner-solution__icon
-							.m-cont-coner
-								.m-coner-el.m-coner-one
-								.m-coner-el.m-coner-two
-								.m-coner-el.m-coner-three
-								.m-coner-el.m-coner-four
-								span ?
-						.partner-solution__text  Были бы рады "заплатить и спать спокойно", но не хотите вникать в формальности из-за небольших сумм?
-					.partner-solution__el
-						.partner-solution__icon
-							.m-cont-coner
-								.m-coner-el.m-coner-one
-								.m-coner-el.m-coner-two
-								.m-coner-el.m-coner-three
-								.m-coner-el.m-coner-four
-								span ?
-						.partner-solution__text  Не хотите тратить время на поход в инспекцию и очереди?
+					- each item in partnerSolution
+						.partner-solution__el
+							.partner-solution__icon
+								.m-cont-coner
+									.m-coner-el.m-coner-one
+									.m-coner-el.m-coner-two
+									.m-coner-el.m-coner-three
+									.m-coner-el.m-coner-four
+									span ?
+							.partner-solution__text  #{item.name}
 					.partner-diveider
 					a(href="#").partner-solution__btn У нас есть для вас простое решение!
 	
@@ -74,98 +49,73 @@ body
 	//section-partner-service
 	.container-fluid.m-section.m-section-service
 		.container
-
 			.section-parnter-title.parnter-service__main-title Партнёрский сервис Налогия для подачи деклараций
 			.row
-				.col-md-6.col-sm-6.col-xs-12
-					.partner-service__el
-						.partner-service__icon
-							i.m-icon.icon-icon-partner-1
-						.partner-service__info
-							.partner-service__title Простое заполнение
-							.partner-service__text Вам нужно только внести некоторые данные о себе. Программа сформирует декларацию автоматически
-
-				.col-md-6.col-sm-6.col-xs-12
-					.partner-service__el
-						.partner-service__icon
-							i.m-icon.icon-icon-partner-2
-						.partner-service__info
-							.partner-service__title Подача в электронном виде
-							.partner-service__text Можно не ходить в инспекцию - подача пакета документов происходит через Интернет
-
-				.col-md-6.col-sm-6.col-xs-12
-					.partner-service__el
-						.partner-service__icon
-							i.m-icon.icon-icon-partner-3
-						.partner-service__info
-							.partner-service__title Понятные инструкции
-							.partner-service__text Всё объясняется простым, понятным языком, без сложных терминов
-
-				.col-md-6.col-sm-6.col-xs-12
-					.partner-service__el
-						.partner-service__icon
-							i.m-icon.icon-icon-partner-4
-						.partner-service__info
-							.partner-service__title Бесплатная консультация
-							.partner-service__text Вы можете задать вопрос по телефону и проконсультироваться именно по вашей ситуации
+				- each item in partnerService
+					.col-md-6.col-sm-6.col-xs-12
+						.partner-service__el
+							.partner-service__icon
+								i(class="m-icon icon#{item.icon}")
+							.partner-service__info
+								.partner-service__title #{item.title}
+								.partner-service__text #{item.text}
 
 	//section-partner-service-end
-	
 
 	//section-partner-work
-	.container-fluid.m-section.m-section-pertner-work
+	.container-fluid.m-section.m-section-partner-work
 		.container
 			.section-parnter-title Как это работает
 
-			.pertner-work__el
-				.pertner-work__icon
+			.partner-work__el
+				.partner-work__icon
 					.m-cont-coner
 						.m-coner-el.m-coner-one
 						.m-coner-el.m-coner-two
 						.m-coner-el.m-coner-three
 						.m-coner-el.m-coner-four
 						span 1
-				.pertner-work__info
-					.pertner-work__el-title Заполните онлайн-анкету
-					.pertner-work__text Вам не нужно самостоятельно заполнять сложную декларацию 3-НДФЛ. Вместо этого вы заполняете простую онлайн-анкету и вносите некоторые данные о себе.
+				.partner-work__info
+					.partner-work__el-title Заполните онлайн-анкету
+					.partner-work__text Вам не нужно самостоятельно заполнять сложную декларацию 3-НДФЛ. Вместо этого вы заполняете простую онлайн-анкету и вносите некоторые данные о себе.
 		
-			.pertner-work__el
-				.pertner-work__icon
+			.partner-work__el
+				.partner-work__icon
 					.m-cont-coner
 						.m-coner-el.m-coner-one
 						.m-coner-el.m-coner-two
 						.m-coner-el.m-coner-three
 						.m-coner-el.m-coner-four
 						span 2
-				.pertner-work__info
-					.pertner-work__el-title Получите декларацию
-					.pertner-work__text Интерфейс нашей программы автоматически формирует декларацию и показывает, какую сумму налога нужно заплатить
+				.partner-work__info
+					.partner-work__el-title Получите декларацию
+					.partner-work__text Интерфейс нашей программы автоматически формирует декларацию и показывает, какую сумму налога нужно заплатить
 					
-			.pertner-work__el
-				.pertner-work__icon
+			.partner-work__el
+				.partner-work__icon
 					.m-cont-coner
 						.m-coner-el.m-coner-one
 						.m-coner-el.m-coner-two
 						.m-coner-el.m-coner-three
 						.m-coner-el.m-coner-four
 						span 3
-				.pertner-work__info
-					.pertner-work__el-title Подайте декларацию
-					.pertner-work__text Вы можете скачать декларацию в виде pdf-документы и самостоятельно подать её в инспекцию
-					.pertner-work__el-title или
-					.pertner-work__text если вы хотите подать декларацию онлайн, без посещения инспекции, вам нужно будет встретиться с курьером сервиса Налогия. Он приедет в удобное для вас время и проведёт идентификацию личности. Это нужно для того, чтобы вам помогли получить электронную подпись, нужную для электронной подачи декларации
+				.partner-work__info
+					.partner-work__el-title Подайте декларацию
+					.partner-work__text Вы можете скачать декларацию в виде pdf-документы и самостоятельно подать её в инспекцию
+					.partner-work__el-title или
+					.partner-work__text если вы хотите подать декларацию онлайн, без посещения инспекции, вам нужно будет встретиться с курьером сервиса Налогия. Он приедет в удобное для вас время и проведёт идентификацию личности. Это нужно для того, чтобы вам помогли получить электронную подпись, нужную для электронной подачи декларации
 					
-			.pertner-work__el
-				.pertner-work__icon
+			.partner-work__el
+				.partner-work__icon
 					.m-cont-coner
 						.m-coner-el.m-coner-one
 						.m-coner-el.m-coner-two
 						.m-coner-el.m-coner-three
 						.m-coner-el.m-coner-four
 						span 4
-				.pertner-work__info
-					.pertner-work__el-title Заполните онлайн-анкету
-					.pertner-work__text Вам не нужно самостоятельно заполнять сложную декларацию 3-НДФЛ. Вместо этого вы заполняете простую онлайн-анкету и вносите некоторые данные о себе.
+				.partner-work__info
+					.partner-work__el-title Заполните онлайн-анкету
+					.partner-work__text Вам не нужно самостоятельно заполнять сложную декларацию 3-НДФЛ. Вместо этого вы заполняете простую онлайн-анкету и вносите некоторые данные о себе.
 
 	//section-partner-price
 	.container-fluid.m-section.m-section-partner-price
@@ -173,14 +123,15 @@ body
 			.section-parnter-title Что мы предлагаем
 			.m-partner-price
 				.m-partner-price__wraper
-					- for (var i = 0; i < 3; i++)
+					- each item in partnerPrice
 						.m-partner-price__el
 							a(href="#").m-partner-price__icon
-								i.m-icon.icon-icon-partner-1
+								i(class="m-icon icon#{item.icon}")
 								.m-partner-price__btn 549 руб.
 							.m-partner-price__info
-								.m-partner-price__title Онлайн-подготовка декларации
-								.m-partner-price__text Вы вносите ваши данные в онлайн-анкету на веб-сайте Налогии, скачиваете готовую правильную декларацию и самостоятельно подаёте документы в налоговую инспекцию
+								.m-partner-price__title #{item.title}
+								.m-partner-price__text #{item.text}
+
 					.m-partner-price__sale.m-cont-coner
 						.m-coner-el.m-coner-one
 						.m-coner-el.m-coner-two
@@ -199,10 +150,10 @@ body
 				a(href="#").head-partner__btn Попробуйте прямо сейчас!
 
 	//section-partner-question
-	.container-fluid.m-section.m-section-pertner-question
+	.container-fluid.m-section.m-section-partner-question
 		.container
 			.section-parnter-title.section-parnter-title--blue Остались вопросы?
-			.m-section-pertner-sub-title Звоните нам – консультируем  бесплатно!
+			.m-section-partner-sub-title Звоните нам – консультируем  бесплатно!
 
 
 
