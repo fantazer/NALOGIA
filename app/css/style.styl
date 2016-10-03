@@ -705,32 +705,43 @@ m_blue = #337ab7
 .parnter-service__main-title 
 	width 90%
 .partner-service__el
+	+below(1024px)
+		min-height 170px
+		margin-bottom 30px
 	+below(768px)
 		fl()
 		fw()
-		margin-bottom 30px
 	f()
-	min-height 200px
 	margin-bottom 100px
 	width 100%
 .partner-service__icon
+	+below(1024px)
+		margin-right 30px
 	+below(768px)
 		text-align center
 		width 100%
-		i
-			&:before
-				font-size 80px
+		margin-right 0
+	i
+		color #71c8f1
+		font-size 90px
 	margin-right 10px
 	width 20%
+.icon-icon-partner-2
+	font-size 75px!important
+	margin-right 30px
+	+below(768px)
+		margin-right 0
+.m-section-service
+	padding-bottom 0
 .partner-service__title
 	+below(768px)
 		font-size 16px
 		text-align center
-	font-size 60px
 	font-size 24px
 	font-family Open Sans
 	color #3e4852
 	margin-bottom 10px
+	font-weight 600 
 .partner-service__info
 	+below(768px)
 		width 100%
@@ -738,7 +749,10 @@ m_blue = #337ab7
 .partner-service__text
 	+below(768px)
 		text-align center
+		font-size 14px
 	width 100%
+	font-size 18px
+	font-weight 400 
 .partner-work__title
 	color #3e4852
 	font-family "Open Sans"
@@ -786,9 +800,13 @@ m_blue = #337ab7
 	fl()
 	align-items flex-start
 .partner-work__text
-	width 100%
 	+below(768px)
 		text-align center
+		font-size 14px
+	width 100%
+	font-size 18px
+	font-weight 400
+	line-height 20px
 .partner-work__el
 	+below(768px)
 		margin-bottom 20px
@@ -802,17 +820,21 @@ m_blue = #337ab7
 			order 2
 		.partner-work__info
 			order 1
+			text-align right
 	&:nth-child(5)
 		.partner-work__icon
 			order 2
 		.partner-work__info
+			text-align right
 			order 1
+
 .partner-work__el-title
 	+below(768px)
 		text-align center
 		font-size 16px
 		font-weight 700
-		width 100%
+	font-weight 600
+	width 100%
 	font-size 24px
 	font-family "Open Sans"
 	margin-bottom 10px
@@ -848,7 +870,7 @@ m_blue = #337ab7
 	i 
 		color #71c8f1
 		&:before
-			font-size 100px
+			font-size 115px
 	&:hover
 		text-decoration none
 .m-partner-price__info
@@ -862,13 +884,16 @@ m_blue = #337ab7
 .m-partner-price__text
 	+below(768px)
 		text-align center
+		font-size 14px
 	width 100%
+	font-size 18px
+	line-height 20px
 .m-partner-price__title
 	+below(768px)
 		font-size 16px
-		font-weight 700
 		text-align center
 		width 100%
+	font-weight 600
 	font-size 24px
 	font-family "Open Sans"
 	margin-bottom 10px
@@ -912,6 +937,8 @@ m_blue = #337ab7
 		+below(768px)
 			height auto
 		height 460px 
+	.head-partner__btn
+		margin-top 30px
 .m-get-partner__baner
 	+below(768px)
 		padding 20px
@@ -933,7 +960,8 @@ m_blue = #337ab7
 	font-weight 600 
 .m-get-partner__title-sub
 	+below(768px)
-		font-size 18px
+		font-size 14px
+		margin-bottom 0
 	color white
 	font-family "Open Sans"
 	font-size 36px

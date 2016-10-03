@@ -1096,9 +1096,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 200px;
   margin-bottom: 100px;
   width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .partner-service__el {
+    min-height: 170px;
+    margin-bottom: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .partner-service__el {
@@ -1108,28 +1113,46 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin-bottom: 30px;
   }
 }
 .partner-service__icon {
   margin-right: 10px;
   width: 20%;
 }
+@media only screen and (max-width: 1024px) {
+  .partner-service__icon {
+    margin-right: 30px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .partner-service__icon {
     text-align: center;
     width: 100%;
-  }
-  .partner-service__icon i:before {
-    font-size: 80px;
+    margin-right: 0;
   }
 }
+.partner-service__icon i {
+  color: #71c8f1;
+  font-size: 90px;
+}
+.icon-icon-partner-2 {
+  font-size: 75px !important;
+  margin-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .icon-icon-partner-2 {
+    margin-right: 0;
+  }
+}
+.m-section-service {
+  padding-bottom: 0;
+}
 .partner-service__title {
-  font-size: 60px;
   font-size: 24px;
   font-family: Open Sans;
   color: #3e4852;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 @media only screen and (max-width: 768px) {
   .partner-service__title {
@@ -1147,10 +1170,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .partner-service__text {
   width: 100%;
+  font-size: 18px;
+  font-weight: 400;
 }
 @media only screen and (max-width: 768px) {
   .partner-service__text {
     text-align: center;
+    font-size: 14px;
   }
 }
 .partner-work__title {
@@ -1262,10 +1288,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .partner-work__text {
   width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
 }
 @media only screen and (max-width: 768px) {
   .partner-work__text {
     text-align: center;
+    font-size: 14px;
   }
 }
 .partner-work__el {
@@ -1299,6 +1329,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
+  text-align: right;
 }
 .partner-work__el:nth-child(5) .partner-work__icon {
   -webkit-box-ordinal-group: 3;
@@ -1307,12 +1338,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
           order: 2;
 }
 .partner-work__el:nth-child(5) .partner-work__info {
+  text-align: right;
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
 }
 .partner-work__el-title {
+  font-weight: 600;
+  width: 100%;
   font-size: 24px;
   font-family: "Open Sans";
   margin-bottom: 10px;
@@ -1322,7 +1356,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    width: 100%;
   }
 }
 .m-partner-price__wraper {
@@ -1395,7 +1428,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #71c8f1;
 }
 .m-partner-price__icon i:before {
-  font-size: 100px;
+  font-size: 115px;
 }
 .m-partner-price__icon:hover {
   text-decoration: none;
@@ -1432,13 +1465,17 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .m-partner-price__text {
   width: 100%;
+  font-size: 18px;
+  line-height: 20px;
 }
 @media only screen and (max-width: 768px) {
   .m-partner-price__text {
     text-align: center;
+    font-size: 14px;
   }
 }
 .m-partner-price__title {
+  font-weight: 600;
   font-size: 24px;
   font-family: "Open Sans";
   margin-bottom: 10px;
@@ -1446,7 +1483,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 @media only screen and (max-width: 768px) {
   .m-partner-price__title {
     font-size: 16px;
-    font-weight: 700;
     text-align: center;
     width: 100%;
   }
@@ -1515,6 +1551,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     height: auto;
   }
 }
+.m-get-partner .head-partner__btn {
+  margin-top: 30px;
+}
 .m-get-partner__baner {
   height: 100%;
   padding: 50px 70px;
@@ -1567,7 +1606,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 @media only screen and (max-width: 768px) {
   .m-get-partner__title-sub {
-    font-size: 18px;
+    font-size: 14px;
+    margin-bottom: 0;
   }
 }
 .m-section-partner-sub-title {
