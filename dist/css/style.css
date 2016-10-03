@@ -1161,7 +1161,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .partner-service__info {
-  width: 90%;
+  width: 80%;
 }
 @media only screen and (max-width: 768px) {
   .partner-service__info {
@@ -1290,7 +1290,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 100%;
   font-size: 18px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 22px;
 }
 @media only screen and (max-width: 768px) {
   .partner-work__text {
@@ -1466,7 +1466,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-partner-price__text {
   width: 100%;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 22px;
 }
 @media only screen and (max-width: 768px) {
   .m-partner-price__text {
