@@ -114,7 +114,7 @@ rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
 .m-section
 	+below(768px)
 		padding 20px 0px
-	padding 70px 0
+	padding 80px 0
 	.btn.btn-nalogia
 		+below(768px)
 			white-space normal
@@ -615,11 +615,15 @@ m_blue = #337ab7
 	margin-bottom 40px
 	width 100%
 .head-partner__logos-el
+	+below(768px)
+		img
+			max-width 100%
 	&:nth-child(1)
 		+below(768px)
 			margin-right 0
 			margin-bottom 10px
 		margin-right 30%
+	
 .head-partner__btn
 	+below(768px)
 		padding 10px
@@ -724,6 +728,9 @@ m_blue = #337ab7
 	i
 		color #71c8f1
 		font-size 90px
+	img
+		+below(768px)
+			margin-bottom 30px
 	margin-right 10px
 	width 20%
 .icon-icon-partner-2
@@ -737,7 +744,7 @@ m_blue = #337ab7
 	+below(768px)
 		font-size 16px
 		text-align center
-	font-size 24px
+	font-size 23px
 	font-family Open Sans
 	color #3e4852
 	margin-bottom 10px
@@ -978,7 +985,113 @@ m_blue = #337ab7
 	font-family "Open Sans"
 	font-size 36px
 .section-parnter-title--blue
-	color #72c8f0
- /*
+	color #0059a0
+/*
  * add style partner-end
+ */
+	
+/*
+ * add style partner-svyz
+ */
+ 
+green-svyz = #00973c
+blue-svyz = #0059a0
+
+.head-partner__light
+	background #eaecf0
+	padding 20px
+.head-partner__title-blue
+	color blue-svyz 
+.head-partner__title-sub-light
+	color blue-svyz 
+.section-parnter-title__light
+	color blue-svyz 
+	width 100%
+.head-partner__baner-light
+	width 100%
+.head-partner__btn-green
+	background green-svyz
+	border 0px
+.head-partner__logos-light
+	+below(1200px)
+		margin 40px 0
+	+below(768px)
+		margin 20px 0
+	margin 60px 0px
+	margin-bottom 80px
+.section-parnter-title__blue
+	color blue-svyz 
+.partner-work__round
+	+below(768px)
+		width 100px
+		height 100px
+	border-radius 50%
+	width 140px
+	height 140px
+	flex(mid)
+	font-size 50px
+.partner-work__round--green
+	border 3px solid green-svyz
+	color green-svyz
+.m-link-green
+	text-decoration underline
+	color green-svyz
+.m-partner-price__btn-green
+	background green-svyz
+.m-partner-price__icon--blue
+	i
+		color blue-svyz
+.m-get-partner--blue
+	bgi('m-bg-svyz.jpg')
+	background-size cover
+/*
+ * add style partner-svyz-end
+ */
+
+/*
+ * add style partner-est
+ */
+red-est = #cf1a22
+.head-partner__title-red
+	color red-est
+.head-partner__title-sub-grey
+	color #848484
+.head-partner__btn-red
+	background-image linear-gradient(to top, #af1319 0%, #d51b24 100%)
+	border 0px
+.partner-solution__icon-square
+	margin-right 40px
+.partner-solution__btn-red
+	background-image linear-gradient(to top, #af1319 0%, #d51b24 100%)
+	&:hover
+		color white
+.m-link--red
+	color red-est
+	text-decoration underline
+.partner-work__coner-red
+	color white
+	background red-est
+	width 140px
+	height 110px
+	flex(mid)
+	border-radius 15px
+	perspective: 1050px;
+	bgi('m-skew-bg-right.png')
+	font-size 52px
+.partner-work__el
+	&:nth-child(3),&:nth-child(5)
+		.partner-work__coner-red
+			bgi('m-skew-bg-left.png')
+.m-partner-price__btn-red
+	background   red-est
+.m-partner-price__icon--red
+	i
+		color red-est
+.section-parnter-title--red
+	color red-est
+.m-get-partner--red
+	bgi("m-bg-est.jpg")
+	background-size cover
+/*
+ * add style partner-est-end
  */

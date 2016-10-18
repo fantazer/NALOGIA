@@ -1,0 +1,245 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/elements/_header.jade
+	include block_html/elements/_const.jade
+
+	//Partner
+	
+	//head-partner
+	.head-partner.head-partner__light
+		.container
+			.head-partner__baner.head-partner__baner-light
+				.head-partner__title.head-partner__title-red НАЛОГОВЫЙ ВЫЧЕТ НЕ ВЫХОДЯ ИЗ ДОМА
+				.head-partner__title-sub.head-partner__title-sub-grey Партнёрская программа
+				.head-partner__logos.head-partner__logos-light
+					.head-partner__logos-el
+						img(src="img/m-logo-est.png", alt="")
+					.head-partner__logos-el
+						img(src="img/m-logo-nalogia.png", alt="")
+				a(href="#").head-partner__btn.head-partner__btn-red Попробуйте прямо сейчас!
+	
+	//section-solution
+	.container-fluid.m-section.m-section-solution
+		.container
+			.partner-solution__wraper
+				.partner-solution
+					- each item in partnerSolutionEst
+						.partner-solution__el
+							.partner-solution__icon.partner-solution__icon-square
+									img(src="img/m-icon-check-square.png", alt="")
+							.partner-solution__text  #{item.name}
+					.partner-diveider
+					a(href="#").partner-solution__btn.partner-solution__btn-red У нас есть для вас простое решение!
+	
+	//section-solution-end
+
+
+	//section-partner-service
+	.container-fluid.m-section.m-section-service
+		.container
+			.section-parnter-title.parnter-service__main-title Партнёрский сервис Налогия для подачи деклараций и получения вычетов
+			.row
+				- each item in partnerServiceEst
+					.col-md-6.col-sm-6.col-xs-12
+						.partner-service__el
+							.partner-service__icon
+								img(src="img/#{item.icon}.png", alt="")
+							.partner-service__info
+								.partner-service__title #{item.title}
+								.partner-service__text #{item.text}
+
+	//section-partner-service-end
+
+	//section-partner-work
+	.container-fluid.m-section.m-section-partner-work
+		.container
+			.section-parnter-title.section-parnter-title__blue Как это работает
+
+			.partner-work__el
+				.partner-work__icon
+					.partner-work__coner-red
+						span 1
+				.partner-work__info
+					.partner-work__el-title Соберите пакет документов
+					.partner-work__text Соберите пакет 
+						a(href="#").m-link--red необходимых документов<br>
+						|для вашего случая
+		
+
+			.partner-work__el
+				.partner-work__icon
+					.partner-work__coner-red
+						span 2
+				.partner-work__info
+					.partner-work__el-title Заполните онлайн-анкету
+					.partner-work__text Вам не нужно самостоятельно заполнять сложную <br> декларацию 3-НДФЛ. Вместо этого вы заполняете простую онлайн-анкету и вносите некоторые данные о себе.
+					
+
+			.partner-work__el
+				.partner-work__icon
+					.partner-work__coner-red
+						span 3
+				.partner-work__info
+					.partner-work__el-title Подайте декларацию
+					.partner-work__text Вы можете скачать декларацию в виде pdf-документы и самостоятельно подать её в инспекцию
+					.partner-work__el-title или
+					.partner-work__text если вы хотите подать декларацию онлайн, без посещения инспекции, вам нужно будет встретиться с курьером сервиса Налогия. Он приедет в удобное для вас время и проведёт идентификацию личности. Это нужно для того, чтобы вам помогли получить электронную подпись, нужную для электронной подачи декларации
+					
+			.partner-work__el
+				.partner-work__icon
+					.partner-work__coner-red
+						span 4
+				.partner-work__info
+					.partner-work__el-title Получите вычет
+					.partner-work__text Через четыре месяца государство перечислит вам сумму возврата на счёт, который вы укажете при заполнении анкеты
+
+
+	//section-partner-price
+	.container-fluid.m-section.m-section-partner-price
+		.container
+			.section-parnter-title Что мы предлагаем
+			.m-partner-price
+				.m-partner-price__wraper
+					- each item in partnerPrice
+						.m-partner-price__el
+							a(href="#").m-partner-price__icon.m-partner-price__icon--red
+								i(class="m-icon icon#{item.icon}")
+								.m-partner-price__btn.m-partner-price__btn-red 549 руб.
+							.m-partner-price__info
+								.m-partner-price__title #{item.title}
+								.m-partner-price__text #{item.text}
+
+	//get-partner
+	.m-get-partner.m-get-partner--red
+		.container
+			.m-get-partner__baner
+				.m-get-partner__title Попробуйте прямо сейчас
+				.m-get-partner__title-sub Ознакомиться с сервисом можно <br> бесплатно – оцените удобство!
+				a(href="#").head-partner__btn Попробуйте прямо сейчас!
+
+	//section-partner-question
+	.container-fluid.m-section.m-section-partner-question
+		.container
+			.section-parnter-title.section-parnter-title--red Остались вопросы?
+			.m-section-partner-sub-title Звоните нам – консультируем  <br>бесплатно!
+
+
+
+
+	//Partner-end
+
+
+	//Section How work
+	.container-fluid.m-section.m-section-work
+		.container
+			.row
+				.m-section__title Как это работает
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-work__el
+						.m-section-work__img
+							img(src="img/n-icon-quest.png", alt="")
+						.m-section-work__text Вы вносите свои данные,консультанту можно задать любой вопрос
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-work__el
+						.m-section-work__img
+							img(src="img/n-icon-form.png", alt="")
+						.m-section-work__text Веб-сайт сформирует Вам правильную декларацию
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-work__el
+						.m-section-work__img.lch
+							img(src="img/n-icon-print.png", alt="")
+						.m-section-work__text Вы можете распечатать готовую декларацию или подать онлайн
+	
+	//Section Chouse
+	.container-fluid.m-section.m-section-chouse
+		.container
+			.row
+				.m-section__title Почему нужно выбрать нас
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-chouse__el
+						.m-section-chouse__img
+							img(src="img/n-icon-check.png", alt="")
+						.m-section-chouse__text Удобство и поддержка
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-chouse__el
+						.m-section-chouse__img
+							img(src="img/n-icon-defend.png", alt="")
+						.m-section-chouse__text Надежность и качество
+				.col-md-4.col-sm-4.col-xs-12
+					.m-section-chouse__el
+						.m-section-chouse__img
+							img(src="img/n-icon-pay.png", alt="")
+						.m-section-chouse__text Низкие цены
+			.row
+				.col-md-12.text-center.m-section-chouse__chouse
+					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
+			.m-section-chouse__footer 
+				|А здесь можно заполнить декларацию за 
+				a(href="#") 2013 
+				| или за 
+				a(href="#") 2014 
+				|год
+
+	//Section video
+	.container-fluid.m-section.m-section-video.main-video
+		.container
+			.row(style="text-align: center")
+				.m-section__title С нами декларация и возвраты - это просто!
+				.frame
+					.frame-inner
+						#main-video-div
+							img(class="play-video" src="http://nalogia.ru/images/main/play.png" data-pin-nopin="true")
+							img(src="img/main_preview.jpg" style="border: 1px solid #cccccc;width: 100%")
+
+	//Section review
+	.container-fluid.m-section.m-section-review
+		.container
+			.row
+				.m-section__title Отзывы наших клиентов
+				.col-md-4
+					.m-section-review__text ...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
+					.m-section-review__name Иван, Кисловодск
+				.col-md-4
+					.m-section-review__text ....Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
+					.m-section-review__name Иван, Кисловодск
+				.col-md-4
+					.m-section-review__text ...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
+					.m-section-review__name Иван, Кисловодск
+			.row
+				.col-md-12.text-center.m-section-chouse__chouse
+					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
+			.m-section-chouse__footer 
+				|А здесь можно заполнить декларацию за 
+				a(href="#") 2013 
+				| или за 
+				a(href="#") 2014 
+				|год
+	//Section review
+	.container-fluid.m-section.m-section-variant
+		.container
+			.row
+				.m-section__title Варианты работы
+				.col-md-6.col-sm-6
+					.m-section-variant-el
+						.m-section-variant-el__content
+							.m-section-variant-el__title Подготовка декларации для возврата
+							.m-section-variant-el__val 499 <span> руб </span>
+						.m-section-variant-el__footer Помогаем Вам быстро и правильно подготовить декларацию
+				.col-md-6.col-sm-6
+					.m-section-variant-el
+						.m-section-variant-el__content
+							.m-section-variant-el__title Онлайн возврат налога
+							.m-section-variant-el__val 2 999 <span> руб </span> 
+						.m-section-variant-el__footer Помогаем Вам подать документы на возврат, не выходя из дома
+			.row
+				.col-md-12.text-center
+					.m-section-variant__text Мы помогли подготовить и подать декларации и другие документы уже <strong>300 445 </strong> пользователям
+			.row
+				.col-md-12.text-center.m-section-chouse__chouse
+					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
+
+//Include footer
+include ./block_html/_script.jade
+

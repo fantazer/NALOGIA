@@ -172,7 +172,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-image: none !important;
 }
 .m-section {
-  padding: 70px 0;
+  padding: 80px 0;
 }
 @media only screen and (max-width: 768px) {
   .m-section {
@@ -932,6 +932,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
             flex-flow: column;
   }
 }
+@media only screen and (max-width: 768px) {
+  .head-partner__logos-el img {
+    max-width: 100%;
+  }
+}
 .head-partner__logos-el:nth-child(1) {
   margin-right: 30%;
 }
@@ -1135,6 +1140,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #71c8f1;
   font-size: 90px;
 }
+@media only screen and (max-width: 768px) {
+  .partner-service__icon img {
+    margin-bottom: 30px;
+  }
+}
 .icon-icon-partner-2 {
   font-size: 75px !important;
   margin-right: 30px;
@@ -1148,7 +1158,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   padding-bottom: 0;
 }
 .partner-service__title {
-  font-size: 24px;
+  font-size: 23px;
   font-family: Open Sans;
   color: #3e4852;
   margin-bottom: 10px;
@@ -1624,8 +1634,169 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .section-parnter-title--blue {
-  color: #72c8f0;
+  color: #0059a0;
 }
 /*
  * add style partner-end
+ */
+/*
+ * add style partner-svyz
+ */
+.head-partner__light {
+  background: #eaecf0;
+  padding: 20px;
+}
+.head-partner__title-blue {
+  color: #0059a0;
+}
+.head-partner__title-sub-light {
+  color: #0059a0;
+}
+.section-parnter-title__light {
+  color: #0059a0;
+  width: 100%;
+}
+.head-partner__baner-light {
+  width: 100%;
+}
+.head-partner__btn-green {
+  background: #00973c;
+  border: 0px;
+}
+.head-partner__logos-light {
+  margin: 60px 0px;
+  margin-bottom: 80px;
+}
+@media only screen and (max-width: 1200px) {
+  .head-partner__logos-light {
+    margin: 40px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .head-partner__logos-light {
+    margin: 20px 0;
+  }
+}
+.section-parnter-title__blue {
+  color: #0059a0;
+}
+.partner-work__round {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .partner-work__round {
+    width: 100px;
+    height: 100px;
+  }
+}
+.partner-work__round--green {
+  border: 3px solid #00973c;
+  color: #00973c;
+}
+.m-link-green {
+  text-decoration: underline;
+  color: #00973c;
+}
+.m-partner-price__btn-green {
+  background: #00973c;
+}
+.m-partner-price__icon--blue i {
+  color: #0059a0;
+}
+.m-get-partner--blue {
+  background: url("../img/m-bg-svyz.jpg") no-repeat;
+  background-size: cover;
+}
+/*
+ * add style partner-svyz-end
+ */
+/*
+ * add style partner-est
+ */
+.head-partner__title-red {
+  color: #cf1a22;
+}
+.head-partner__title-sub-grey {
+  color: #848484;
+}
+.head-partner__btn-red {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#af1319), to(#d51b24));
+  background-image: -webkit-linear-gradient(bottom, #af1319 0%, #d51b24 100%);
+  background-image: linear-gradient(to top, #af1319 0%, #d51b24 100%);
+  border: 0px;
+}
+.partner-solution__icon-square {
+  margin-right: 40px;
+}
+.partner-solution__btn-red {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#af1319), to(#d51b24));
+  background-image: -webkit-linear-gradient(bottom, #af1319 0%, #d51b24 100%);
+  background-image: linear-gradient(to top, #af1319 0%, #d51b24 100%);
+}
+.partner-solution__btn-red:hover {
+  color: #fff;
+}
+.m-link--red {
+  color: #cf1a22;
+  text-decoration: underline;
+}
+.partner-work__coner-red {
+  color: #fff;
+  background: #cf1a22;
+  width: 140px;
+  height: 110px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-perspective: 1050px;
+          perspective: 1050px;
+  background: url("../img/m-skew-bg-right.png") no-repeat;
+  font-size: 52px;
+}
+.partner-work__el:nth-child(3) .partner-work__coner-red,
+.partner-work__el:nth-child(5) .partner-work__coner-red {
+  background: url("../img/m-skew-bg-left.png") no-repeat;
+}
+.m-partner-price__btn-red {
+  background: #cf1a22;
+}
+.m-partner-price__icon--red i {
+  color: #cf1a22;
+}
+.section-parnter-title--red {
+  color: #cf1a22;
+}
+.m-get-partner--red {
+  background: url("../img/m-bg-est.jpg") no-repeat;
+  background-size: cover;
+}
+/*
+ * add style partner-est-end
  */
