@@ -86,14 +86,15 @@ body
 			.section-parnter-title Что мы предлагаем
 			.m-partner-price
 				.m-partner-price__wraper
-					- each item in partnerPrice
+					- each item in partnerPriceSvyz
 						.m-partner-price__el
 							a(href="#").m-partner-price__icon.m-partner-price__icon--blue
 								i(class="m-icon icon#{item.icon}")
-								.m-partner-price__btn.m-partner-price__btn-green 549 руб.
+								.m-partner-price__btn.m-partner-price__btn-green #{item.price} руб.
 							.m-partner-price__info
 								.m-partner-price__title #{item.title}
 								.m-partner-price__text #{item.text}
+
 
 	//get-partner
 	.m-get-partner.m-get-partner--blue

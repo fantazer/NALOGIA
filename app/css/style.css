@@ -307,10 +307,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-section-variant-el__content {
   padding: 40px 60px;
   background-color: #e5e9ed;
-  -webkit-border-radius: 8px 8px 0px 0px;
-          border-radius: 8px 8px 0px 0px;
-  -webkit-box-shadow: 0 0 17px rgba(0,28,53,0.1);
-          box-shadow: 0 0 17px rgba(0,28,53,0.1);
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 0 0 17px rgba(0,28,53,0.1);
   height: 290px;
 }
 @media only screen and (max-width: 768px) {
@@ -351,8 +349,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  -webkit-border-radius: 0px 0px 8px 8px;
-          border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 8px 8px;
 }
 @media only screen and (max-width: 768px) {
   .m-section-variant-el__footer {
@@ -388,8 +385,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-wrap-slider {
-  -webkit-box-shadow: 0px 3px 8px #e3e3e3;
-          box-shadow: 0px 3px 8px #e3e3e3;
+  box-shadow: 0px 3px 8px #e3e3e3;
 }
 .m-wrap-slider {
   *zoom: 1;
@@ -506,18 +502,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .owl-dots {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: -40px;
   position: relative;
   z-index: 2000;
@@ -528,14 +515,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .owl-dot {
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   margin: 5px;
   width: 15px;
   height: 15px;
   background: #fff;
-  -webkit-box-shadow: inset 0px 1px 1px;
-          box-shadow: inset 0px 1px 1px;
+  box-shadow: inset 0px 1px 1px;
 }
 @media only screen and (max-width: 480px) {
   .owl-dot {
@@ -580,18 +565,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin-bottom: 40px;
 }
 .m-calc__row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 30px;
 }
 .m-calc__row-title {
@@ -623,9 +599,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin: 20px 0;
 }
 .m-calc__row-radio {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 .m-calc__row-radio input {
@@ -657,22 +630,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .calc__title-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 768px) {
@@ -699,9 +660,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .calc__footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 .calc__footer .calc__title-lg {
@@ -721,7 +679,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .calc__footer-info {
-  width: -webkit-calc(100% - 65px);
   width: calc(100% - 65px);
 }
 /*
@@ -820,24 +777,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 90%;
   height: 100%;
   padding: 50px 70px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
@@ -907,34 +851,16 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .head-partner__logos {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 40px;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .head-partner__logos {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .head-partner__logos-el img {
-    max-width: 100%;
+    flex-wrap: wrap;
+    flex-flow: column;
   }
 }
 .head-partner__logos-el:nth-child(1) {
@@ -945,6 +871,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+.head-partner__logos-el img {
+  max-width: 250px;
 }
 .head-partner__btn {
   display: inline-block;
@@ -968,39 +897,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #fff !important;
 }
 .partner-solution__el {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   margin-bottom: 30px;
 }
 .partner-solution__icon .m-cont-coner {
   width: 60px;
   height: 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #71c8f1;
   font-family: "Open Sans";
   font-weight: 300;
@@ -1030,18 +938,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin: 45px 0;
 }
 .partner-solution__wraper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .partner-solution {
   width: 80%;
@@ -1063,8 +962,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 100%;
   text-align: center;
   padding: 30px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 768px) {
   .partner-solution__btn {
@@ -1094,12 +992,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .parnter-service__main-title {
-  width: 90%;
+  width: 100%;
 }
 .partner-service__el {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
   width: 100%;
@@ -1112,12 +1007,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 @media only screen and (max-width: 768px) {
   .partner-service__el {
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    flex-flow: column;
+    flex-wrap: wrap;
   }
 }
 .partner-service__icon {
@@ -1204,54 +1095,29 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background: #f7f8fa;
 }
 .partner-work__el {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .partner-work__el {
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    flex-flow: column;
+    flex-wrap: wrap;
   }
 }
 .partner-work__el .m-cont-coner {
   width: 140px;
   height: 140px;
   font-size: 70px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-family: "Open Sans";
   font-weight: 400;
 }
 .partner-work__icon {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #71c8f1;
 }
 .partner-work__icon .m-coner-el {
@@ -1270,26 +1136,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .partner-work__info {
   width: 60%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-flow: column;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 768px) {
   .partner-work__info {
@@ -1316,43 +1168,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin-bottom: 20px;
   }
   .partner-work__el .partner-work__icon {
-    -webkit-box-ordinal-group: 2 !important;
-    -webkit-order: 1 !important;
-        -ms-flex-order: 1 !important;
-            order: 1 !important;
+    order: 1 !important;
   }
   .partner-work__el .partner-work__info {
-    -webkit-box-ordinal-group: 3 !important;
-    -webkit-order: 2 !important;
-        -ms-flex-order: 2 !important;
-            order: 2 !important;
+    order: 2 !important;
   }
 }
 .partner-work__el:nth-child(3) .partner-work__icon {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
 .partner-work__el:nth-child(3) .partner-work__info {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
   text-align: right;
 }
 .partner-work__el:nth-child(5) .partner-work__icon {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
 }
 .partner-work__el:nth-child(5) .partner-work__info {
   text-align: right;
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
 }
 .partner-work__el-title {
   font-weight: 600;
@@ -1378,9 +1212,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-partner-price__el {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   padding-bottom: 40px;
   padding-top: 20px;
@@ -1388,12 +1219,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 @media only screen and (max-width: 768px) {
   .m-partner-price__el {
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    flex-flow: column;
+    flex-wrap: wrap;
   }
 }
 .m-partner-price__el .m-icon {
@@ -1402,30 +1229,16 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-partner-price__btn {
   padding: 5px 30px;
   background-color: #72c8f0;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   color: #fff;
   margin-top: 20px;
 }
 .m-partner-price__icon {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
   width: 30%;
 }
 @media only screen and (max-width: 768px) {
@@ -1445,28 +1258,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .m-partner-price__info {
   width: 70%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-flow: column;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 768px) {
   .m-partner-price__info {
@@ -1567,24 +1364,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-get-partner__baner {
   height: 100%;
   padding: 50px 70px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-flow: column;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 768px) {
   .m-get-partner__baner {
@@ -1666,6 +1450,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .head-partner__logos-light {
   margin: 60px 0px;
   margin-bottom: 80px;
+  align-items: flex-end;
 }
 @media only screen and (max-width: 1200px) {
   .head-partner__logos-light {
@@ -1675,28 +1460,22 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 @media only screen and (max-width: 768px) {
   .head-partner__logos-light {
     margin: 20px 0;
+    align-items: center;
   }
+}
+.head-partner__logos-light .head-partner__logos-el:nth-child(1) {
+  margin-right: 10%;
 }
 .section-parnter-title__blue {
   color: #0059a0;
 }
 .partner-work__round {
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 140px;
   height: 140px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 50px;
 }
 @media only screen and (max-width: 768px) {
@@ -1736,8 +1515,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #848484;
 }
 .head-partner__btn-red {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#af1319), to(#d51b24));
-  background-image: -webkit-linear-gradient(bottom, #af1319 0%, #d51b24 100%);
   background-image: linear-gradient(to top, #af1319 0%, #d51b24 100%);
   border: 0px;
 }
@@ -1745,8 +1522,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin-right: 40px;
 }
 .partner-solution__btn-red {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#af1319), to(#d51b24));
-  background-image: -webkit-linear-gradient(bottom, #af1319 0%, #d51b24 100%);
   background-image: linear-gradient(to top, #af1319 0%, #d51b24 100%);
 }
 .partner-solution__btn-red:hover {
@@ -1761,22 +1536,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background: #cf1a22;
   width: 140px;
   height: 110px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
-  -webkit-perspective: 1050px;
-          perspective: 1050px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  perspective: 1050px;
   background: url("../img/m-skew-bg-right.png") no-repeat;
   font-size: 52px;
 }
@@ -1796,6 +1560,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-get-partner--red {
   background: url("../img/m-bg-est.jpg") no-repeat;
   background-size: cover;
+}
+.m-section--white {
+  background: #fff;
+}
+.m-section--grey {
+  background: #f5f5f5;
 }
 /*
  * add style partner-est-end

@@ -21,7 +21,7 @@ body
 				a(href="#").head-partner__btn.head-partner__btn-red Попробуйте прямо сейчас!
 	
 	//section-solution
-	.container-fluid.m-section.m-section-solution
+	.container-fluid.m-section.m-section-solution.m-section--white
 		.container
 			.partner-solution__wraper
 				.partner-solution
@@ -37,7 +37,7 @@ body
 
 
 	//section-partner-service
-	.container-fluid.m-section.m-section-service
+	.container-fluid.m-section.m-section-service.m-section--grey
 		.container
 			.section-parnter-title.parnter-service__main-title Партнёрский сервис Налогия для подачи деклараций и получения вычетов
 			.row
@@ -53,9 +53,9 @@ body
 	//section-partner-service-end
 
 	//section-partner-work
-	.container-fluid.m-section.m-section-partner-work
+	.container-fluid.m-section.m-section-partner-work.m-section--white
 		.container
-			.section-parnter-title.section-parnter-title__blue Как это работает
+			.section-parnter-title Как это работает
 
 			.partner-work__el
 				.partner-work__icon
@@ -97,16 +97,16 @@ body
 
 
 	//section-partner-price
-	.container-fluid.m-section.m-section-partner-price
+	.container-fluid.m-section.m-section-partner-price.m-section--grey
 		.container
 			.section-parnter-title Что мы предлагаем
 			.m-partner-price
 				.m-partner-price__wraper
-					- each item in partnerPrice
+					- each item in partnerPriceSvyz
 						.m-partner-price__el
 							a(href="#").m-partner-price__icon.m-partner-price__icon--red
 								i(class="m-icon icon#{item.icon}")
-								.m-partner-price__btn.m-partner-price__btn-red 549 руб.
+								.m-partner-price__btn.m-partner-price__btn-red #{item.price} руб.
 							.m-partner-price__info
 								.m-partner-price__title #{item.title}
 								.m-partner-price__text #{item.text}

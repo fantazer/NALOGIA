@@ -615,15 +615,13 @@ m_blue = #337ab7
 	margin-bottom 40px
 	width 100%
 .head-partner__logos-el
-	+below(768px)
-		img
-			max-width 100%
 	&:nth-child(1)
 		+below(768px)
 			margin-right 0
 			margin-bottom 10px
 		margin-right 30%
-	
+	img
+		max-width 250px
 .head-partner__btn
 	+below(768px)
 		padding 10px
@@ -707,7 +705,7 @@ m_blue = #337ab7
 	text-transform uppercase		
 	text-align center
 .parnter-service__main-title 
-	width 90%
+	width 100%
 .partner-service__el
 	+below(1024px)
 		min-height 170px
@@ -1017,8 +1015,13 @@ blue-svyz = #0059a0
 		margin 40px 0
 	+below(768px)
 		margin 20px 0
+		align-items center
+	.head-partner__logos-el
+		&:nth-child(1)
+			margin-right 10%
 	margin 60px 0px
 	margin-bottom 80px
+	align-items flex-end
 .section-parnter-title__blue
 	color blue-svyz 
 .partner-work__round
@@ -1092,6 +1095,10 @@ red-est = #cf1a22
 .m-get-partner--red
 	bgi("m-bg-est.jpg")
 	background-size cover
+.m-section--white
+	background white
+.m-section--grey
+	background #f5f5f5
 /*
  * add style partner-est-end
  */
