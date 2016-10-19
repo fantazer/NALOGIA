@@ -932,11 +932,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
             flex-flow: column;
   }
 }
-@media only screen and (max-width: 768px) {
-  .head-partner__logos-el img {
-    max-width: 100%;
-  }
-}
 .head-partner__logos-el:nth-child(1) {
   margin-right: 30%;
 }
@@ -945,6 +940,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+.head-partner__logos-el img {
+  max-width: 250px;
 }
 .head-partner__btn {
   display: inline-block;
@@ -1094,7 +1092,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .parnter-service__main-title {
-  width: 90%;
+  width: 100%;
 }
 .partner-service__el {
   display: -webkit-box;
@@ -1666,6 +1664,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .head-partner__logos-light {
   margin: 60px 0px;
   margin-bottom: 80px;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 @media only screen and (max-width: 1200px) {
   .head-partner__logos-light {
@@ -1675,7 +1677,14 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 @media only screen and (max-width: 768px) {
   .head-partner__logos-light {
     margin: 20px 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+.head-partner__logos-light .head-partner__logos-el:nth-child(1) {
+  margin-right: 10%;
 }
 .section-parnter-title__blue {
   color: #0059a0;
@@ -1796,6 +1805,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-get-partner--red {
   background: url("../img/m-bg-est.jpg") no-repeat;
   background-size: cover;
+}
+.m-section--white {
+  background: #fff;
+}
+.m-section--grey {
+  background: #f5f5f5;
 }
 /*
  * add style partner-est-end
