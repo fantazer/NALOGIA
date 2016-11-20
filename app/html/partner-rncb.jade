@@ -1,0 +1,175 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/elements/_header.jade
+	include block_html/elements/_const.jade
+
+	//Partner-rncb
+	
+	//head-partner
+	.r-baner
+		.container
+			.r-baner__wraper
+				.r-baner__info
+					.r-baner__title Верните ваши налоги легко
+					.r-baner__text Мы поможем быстро и просто подготовить и подать правильные документы для максимального 	возврата.
+					a(href="#").r-button Попробовать
+	
+	//section-items
+	.r-section
+		.container
+			.r-section__title Налоги можно вернуть, если вы...
+			.r-section-item__wraper
+				- each item in partnerRNBCitem
+					.r-section-item__el
+						.r-section-item__img
+							.r-section-item__icon
+								i(class="m-icon icon#{item.icon}")
+						.r-section-item__info
+							.r-section-item__title #{item.title}
+							.r-section-item__text #{item.text}
+	
+	//section-step
+	.r-section.r-section--step
+		.container
+			.r-section__title Три шага к возврату налогов
+			.r-step
+				.r-step__el
+					.r-step__info
+						.r-step__title
+							.r-step__title-numb 1
+							.r-step__title-text Заполните онлайн-анкету
+						.r-step__text 
+							p Для возврата налогов не нужно самостоятельно заполнять сложную декларацию 3-НДФЛ. Вместо этого вы заполняете простую онлайн-анкету и вносите некоторые данные о себе. Наши консультанты помогут заполнить анкету, ответят на все вопросы в онлайн чате и по телефону, а также помогут максимизировать сумму возврата. Мы автоматически сформируем декларацию и покажем, сколько денег можно вернуть.
+					.r-step__img
+						img(src="img/m-item-rncb-1.png", alt="")
+				.r-step__el.r-step__el--reverce
+					.r-step__info
+						.r-step__title
+							.r-step__title-numb 2
+							.r-step__title-text Подготовьте документы
+						.r-step__text  
+							p Соберите пакет сопроводительных документов для возврата налога. Вам, скорее всего, понадобится справка о доходах 2-НДФЛ, а также, например, если Вы возвращаете налоги по покупке жилья, документы, подтверждающие право собственности на квартиру или дом, ипотечный договор. 
+							p  Вот здесь можно посмотреть, какие документы нужны, кроме декларации и заявления, которые мы поможем Вам сделать для: 
+								a(href="#") возврата по покупке жилья и ипотеке
+								|, 
+								a(href="#") обучению
+								|, 
+								a(href="#") лечению
+								|, 
+								a(href="#") страхованию жизни
+								|, 
+								a(href="#") инвестициям
+								|.
+					.r-step__img
+						img(src="img/m-item-rncb-2.png", alt="")
+				.r-step__el
+					.r-step__info
+						.r-step__title
+							.r-step__title-numb 3
+							.r-step__title-text  Подайте декларацию и дождитесь денег
+						.r-step__text
+							p Вы можете скачать декларацию, приложить к ней сопроводительные документы и самостоятельно подать их в инспекцию...
+							.r-step__text-divider или 
+							p ...если вы хотите подать документы онлайн, без посещения инспекции, вам нужно будет встретиться с нашим курьером. Он приедет в удобное для вас время и проведёт идентификацию личности. Это нужно для того, чтобы мы помогли вам получить электронную подпись, нужную для электронной подачи декларации. Сопроводительные документы в этом случае загружаются в личный кабинет в виде сканов.
+					.r-step__img
+						img(src="img/m-item-rncb-3.png", alt="")
+			.r-instr
+				.r-instr__title Через 4 месяца
+					sup * 
+					| вы получите деньги на карту
+				.r-instr__title-sub
+					sup * 
+					| срок зафиксирован в законодательстве
+	
+	//section-info
+	.r-section__info
+		.container
+			.r-section__info-title Мы также можем сделать все за Вас!
+			p Просто пошлите, пожалуйста, нам фотографии или сканы ваших документов (например, основных страниц паспорта), и наши консультанты сделают все за вас — подготовят правильные документы, в том числе налоговую декларацию. Вы получите правильные документы, максимизирующие ваши налоги к возврату.
+
+			p Далее вы сможете подать документы самостоятельно или подать все онлайн через наш веб-сайт, чтобы не ходить в инспекцию. Позвоните, пожалуйста, нашим консультантам по телефону 8 800 500 3478, и они расскажут, с чего и как начать.
+	
+	//section-chose
+	.r-section.r-section--chose
+		.container
+			.r-section__title Выберите подходящий вариант
+			.r-chose__wraper
+				.r-chose__el
+					.r-chose__card
+						.r-chose__card-discr
+							.r-chose__card-title Подготовка декларации
+							.r-chose__card-cost 499 р.
+							.r-chose__card-info Получите правильные документы
+						a(href="#").r-chose__card-get Перейти к заполнению
+					.r-chose__text Вы вносите ваши данные в онлайн-анкету на нашем веб-сайте, скачиваете готовую правильную декларацию и самостоятельно подаёте документы в налоговую инспекцию.
+				.r-chose__el
+					.r-chose__card
+						.r-chose__card-discr
+							.r-chose__card-title Онлайн-возврат налога
+							.r-chose__card-cost 2999 р.
+							.r-chose__card-info Получите возврат, не выходя из дома
+						a(href="#").r-chose__card-get Перейти к заполнению
+					.r-chose__text Вы вносите ваши данные в онлайн-анкету на нашем веб-сайте, наши специалисты проверяют её и помогают вам подать все документы через Интернет.
+				.r-chose__el
+					.r-chose__card
+						.r-chose__card-discr
+							.r-chose__card-title Возврат под ключ
+							.r-chose__card-cost 4999 р.
+							.r-chose__card-info Мы сделаем все за Вас
+						a(href="#").r-chose__card-get Перейти к заполнению
+					.r-chose__text Наши специалисты подготовят и подадут декларацию и заявление для возврата. От вас потребуются только прислать нам сканы или фотографии некоторых документов.ию.
+	
+	//section-review
+	.r-section.r-section--review
+		.container
+			.r-section__title Отзывы наших клиентов
+			.r-review
+				.r-review__el
+					.r-review__title Светлана
+					.r-review__text Благодаря Вам получились максимально быстро и без ошибок подготовить документы для вычета и все быстро сделать!
+				.r-review__el
+					.r-review__title Константин
+					.r-review__text Спасибо за ваш сервис. С ним даже самый непонятливый сможет вернуть свои налоги по максимуму! :-)))
+			
+			.r-regist
+				.r-regist__enter
+					.r-regist__title Вход
+					.r-regist__wrap
+						.r-regist__text Если вы уже зарегистрированы, пожалуйста введите Ваши логин и пароль ниже
+						form(action="#")
+							.r-form__row
+								label Логин
+								input(type="text")
+							.r-form__row
+								label Пароль
+								input(type="password")
+							button Войти
+				.r-regist__in
+					.r-regist__title Регистрация
+					.r-regist__wrap
+						.r-regist__text Если вы впервые на веб-сайте "Возврат налогов", пожалуйста, зарегистрируйтесь. Это очень просто.
+						form(action="#")
+							.r-form__row
+								label Адрес электронной почты
+								input(type="text")
+							.r-form__row
+								label  Логин
+								input(type="text")
+							.r-form__row
+								label Пароль
+								input(type="password")
+							.r-form__row
+								label  Подтверждение пароля
+								input(type="password")
+							button Зарегистрироваться
+
+
+
+
+
+
+//Include footer
+include ./block_html/_script.jade
+

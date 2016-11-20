@@ -491,14 +491,32 @@ m_blue = #337ab7
    -moz-osx-font-smoothing: grayscale;
  }
 
+.icon-m-icon-rncb-3:before {
+  content: "\e90c";
+}
+.icon-m-icon-rncb-4:before {
+  content: "\e90d";
+}
+.icon-m-icon-rncb-5:before {
+  content: "\e90f";
+}
+.icon-m-icon-rncb-1:before {
+  content: "\e90e";
+}
+.icon-m-icon-rncb-2:before {
+  content: "\e910";
+}
+.icon-m-icon-rncb-6:before {
+  content: "\e911";
+}
+.icon-icon-partner-7:before {
+  content: "\e905";
+}
 .icon-icon-partner-6:before {
   content: "\e90a";
 }
 .icon-icon-partner-5:before {
   content: "\e90b";
-}
-.icon-icon-partner-7:before {
-  content: "\e905";
 }
 .icon-icon-partner-2:before {
   content: "\e906";
@@ -1101,4 +1119,406 @@ red-est = #cf1a22
 	background #f5f5f5
 /*
  * add style partner-est-end
+ */
+ 
+
+ /*
+ * add style partner-rncb
+ */
+ lazur = #10aea9
+ .r-baner
+	+below(1200px)
+		background-position 70%
+	+below(640px)
+		background #e0e4e5 
+		padding 10px
+	height 390px
+	bgi('m-baner-rncb.jpg')
+	background-size cover
+	background-position center
+	.container
+		height 100%
+.r-baner__wraper
+	flex(mid)
+	height 100%
+	justify-content flex-start
+.r-baner__info
+	+below(1200px)
+		width 60%
+	+below(640px)
+		width 100%
+	width 50%
+.r-baner__title
+	+below(978px)
+		font-size 24px
+	+below(640px)
+		text-align center
+	color lazur
+	font-size 31px
+	font-weight 700
+	font-family Arial
+.r-baner__text
+	+below(1200px)
+		margin 20px 0
+	+below(978px)
+		font-size 20px
+	+below(640px)
+		text-align center
+	font-size 23px
+	font-weight 400
+	font-family Arial
+	margin 40px 0
+.r-button
+	+below(640px)
+		display block 
+		text-align center
+		font-size 18px
+		text-decoration none !important
+	color white
+	font-family Arial
+	font-size 23px
+	font-weight 700
+	background lazur
+	padding 10px 50px
+	border-radius 30px
+	tr(all)
+	display inline-block
+	&:hover
+		text-decoration none
+		background darken(lazur,10)
+		color white
+
+.r-section
+	+below(640px)
+		padding 20px 10px
+	padding 50px 0
+.r-section--step
+	padding-top 10px
+.r-section__title
+	+below(978px)
+		font-size 24px
+		margin-bottom 30px
+	text-align center
+	color #333
+	font-family Arial
+	font-size 31px
+	font-weight 400
+	margin-bottom 60px
+	
+.r-section-item__wraper
+	flex(between)
+	fw()
+.r-section-item__el
+	+below(978px)
+		width 100%
+	+below(640px)
+		fw()
+		flex(mid)
+		margin-bottom 20px
+	f()
+	width 48%
+	margin-bottom 50px
+.r-section-item__img
+	+below(640px)
+		width 100%
+		margin-bottom 20px
+		margin-right 0
+	width 25%
+	margin-right 10px
+	flex(mid)
+.r-section-item__icon
+	width 95px
+	height 95px
+	border 2px solid lazur
+	flex(mid)
+	border-radius 50%
+	i
+		color lazur
+		font-size 46px
+.r-section-item__info
+	+below(640px)
+		text-align center
+		width 100%
+	width 75%
+.r-section-item__title
+	margin-bottom 10px
+	color lazur
+	font-size 19px
+	font-weight 700
+//.r-section-item__text
+
+//.r-section
+//.container
+//.r-step
+.r-step__el
+	+below(978px)
+		margin-bottom 20px
+		fl()
+		fw()
+		flex-wrap wrap!important
+	flex(between)
+	margin-bottom 50px
+.r-step__info
+	+below(978px)
+		order 2
+		width 100%
+		p
+			font-size 14px
+		a
+			font-size 14px!important
+	width 69%
+.r-step__title
+	+below(978px)
+		margin-bottom 15px
+	f()
+	align-items center
+	margin-bottom 30px
+.r-step__title-numb
+	color white
+	font-size 25px
+	font-weight 700
+	padding 10px
+	background lazur
+	display inline-block 
+	width 40px
+	height 40px
+	flex(mid)
+	margin-right 20px
+.r-step__title-text
+	+below(978px)
+		font-size 16px
+	font-size 25px
+	font-weight 700
+	color lazur
+.r-step__text
+	color #565656
+	font-size 18px
+	font-weight 400
+	a
+		color #10aea9
+		font-size 19px
+		font-weight 400
+		line-height 27px
+		text-decoration underline
+.r-step__img
+	+below(978px)
+		flex(mid)
+		order 1
+		width 100%
+		img
+			max-width 300px
+			margin 0!important
+	+below(640px)
+		display none
+	width 30%
+	flex(mid)
+	img
+		display block
+		width 100%
+.r-step__text-divider
+	+below(978px)
+		margin 10px 0
+	text-align center
+	color lazur
+	font-weight 700
+	margin 25px 0
+.r-step__el--reverce
+	.r-step__info
+		order 2
+	.r-step__img
+		order 1
+		img
+			margin-left -120px
+.r-instr
+	margin-bottom 40px
+.r-instr__title
+	text-align center
+	font-size 29px
+	font-family Arial
+	font-weight 400
+	margin-bottom 40px
+	sup
+		color lazur
+		line-height 10px
+		margin-top 5px
+		top -4px
+.r-instr__title-sub
+	text-align center
+	color #575757
+	sup
+		color lazur!important
+		top -4px
+		color #575757
+		font-size 15px
+.r-section__info
+	+below(768px)
+		padding 40px 20px
+	padding 70px
+	background lazur 
+	p
+		+below(768px)
+			font-size 14px
+			margin-bottom 10px
+			line-height inherit 
+		color white
+		font-size 19px
+		font-weight 400
+		line-height 27px
+		margin-bottom 30px
+		&:nth-child(3)
+			margin-bottom 0
+.r-section__info-title
+	+below(768px)
+		font-size 22px
+		text-align center
+		margin-bottom 10px
+	color white
+	font-size 31px
+	font-weight 700
+	font-family Arial
+	margin-bottom 30px
+.r-section--chose
+	+below(768px)
+		padding 30px 10px
+	padding 80px 0
+	background #cee5e4 
+	.r-section__title
+		color #333
+.r-chose__wraper
+	+below(1024px)
+		flex(mid)
+		fw()
+		fl()
+	flex(between)
+	align-items stretch
+.r-chose__el
+	+below(1024px)
+		width 50%
+		margin-bottom 30px
+	+below(640px)
+		width 100%
+	width 30%
+.r-chose__card
+	+below(1024px)
+		height auto
+		flex(mid)
+	background white
+	flex(between)
+	fw()
+	padding 30px 25px
+	border-radius 5px
+	margin-bottom 30px
+	height 390px
+.r-chose__card-discr
+	padding 0 10px
+	width 100%
+.r-chose__card-title
+	color #10aea9
+	font-size 22px
+	font-weight 700
+	font-family Arial
+	text-align center
+	line-height 30px
+	text-transform uppercase
+.r-chose__card-cost
+	+below(768px)
+		margin 10px 0
+	margin 30px 0
+	text-align center
+	color #7c9695
+	font-size 35px
+	font-weight 400
+.r-chose__card-info
+	color black
+	font-size 17px
+	font-weight 400
+	text-align center
+	margin-bottom 35px
+.r-chose__card-get
+	@extend .r-button
+	font-size 14px
+	width 100%
+	padding 15px 25px
+	text-align center
+.r-chose__text
+	padding 0 20px
+	color #4e6665
+	font-family Arial
+	font-size 13px
+	font-weight 400
+//.r-section
+//.r-section--review
+.r-review
+	+below(768px)
+		flex(mid)
+		fw()
+		fl()
+		margin-bottom 30px
+	flex(between)
+	margin-bottom 80px
+.r-review__el
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+	width 45%
+.r-review__title
+	color lazur
+	font-size 19px
+	margin-bottom 10px
+//.r-review__text
+.r-regist
+	+below(768px)
+		flex(mid)
+		fw()
+		fl()
+	flex(between)
+	align-items flex-start
+.r-regist__enter
+	+below(768px)
+			width 100%
+			margin-bottom 20px
+	width 48%
+.r-regist__in
+	+below(768px)
+			width 100%
+			margin-bottom 20px
+	width 48%
+.r-regist__title
+	font-size 22px
+	margin-bottom 10px
+	color #707070
+.r-regist__wrap
+	padding 15px
+	border 1px solid #c8c9c9
+	button
+		+below(768px)
+			width 100%
+		tr(all)
+		color white
+		font-family Arial
+		font-size 16px
+		font-weight 700
+		background lazur
+		padding 10px 30px
+		border-radius 30px
+		border 0px
+		display inline-block
+		margin-top 10px
+		&:hover
+			text-decoration none
+			background darken(lazur,10)
+			color white
+.r-regist__text
+	margin-bottom 10px
+.r-form__row
+	margin-bottom 10px
+	label
+		display block
+		color #707070
+	input
+		width 100%
+		border 1px solid #c8c9c9
+		padding  5px 8px
+ /*
+ * add style partner-rncb-end
  */
