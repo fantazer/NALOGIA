@@ -1127,8 +1127,6 @@ red-est = #cf1a22
  */
  lazur = #10aea9
  .r-baner
-	+below(1200px)
-		background-position 70%
 	+below(640px)
 		background #e0e4e5 
 		padding 10px
@@ -1136,15 +1134,19 @@ red-est = #cf1a22
 	bgi('m-baner-rncb.jpg')
 	background-size cover
 	background-position center
+	height 450px;
+	box-shadow 0px 6px 16px -5px rgba(0, 0, 0, 0.27)
+	padding 0 30px
 	.container
 		height 100%
+	
 .r-baner__wraper
 	flex(mid)
 	height 100%
 	justify-content flex-start
 .r-baner__info
 	+below(1200px)
-		width 60%
+		width 50%
 	+below(640px)
 		width 100%
 	width 50%
@@ -1164,7 +1166,7 @@ red-est = #cf1a22
 		font-size 20px
 	+below(640px)
 		text-align center
-	font-size 23px
+	font-size 22px
 	font-weight 400
 	font-family Arial
 	margin 40px 0
@@ -1351,10 +1353,14 @@ red-est = #cf1a22
 		color #575757
 		font-size 15px
 .r-section__info
+	+below(1200px)
+		.container
+			width 100%
 	+below(768px)
 		padding 40px 20px
 	padding 70px
 	background lazur 
+	
 	p
 		+below(768px)
 			font-size 14px
@@ -1413,6 +1419,8 @@ red-est = #cf1a22
 	padding 0 10px
 	width 100%
 .r-chose__card-title
+	+below(768px)
+		font-size 18px
 	color #10aea9
 	font-size 22px
 	font-weight 700

@@ -1841,11 +1841,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background: url("../img/m-baner-rncb.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-}
-@media only screen and (max-width: 1200px) {
-  .r-baner {
-    background-position: 70%;
-  }
+  height: 450px;
+  -webkit-box-shadow: 0px 6px 16px -5px rgba(0,0,0,0.27);
+          box-shadow: 0px 6px 16px -5px rgba(0,0,0,0.27);
+  padding: 0 30px;
 }
 @media only screen and (max-width: 640px) {
   .r-baner {
@@ -1880,7 +1879,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 @media only screen and (max-width: 1200px) {
   .r-baner__info {
-    width: 60%;
+    width: 50%;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -1905,7 +1904,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .r-baner__text {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 400;
   font-family: Arial;
   margin: 40px 0;
@@ -2303,6 +2302,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   padding: 70px;
   background: #10aea9;
 }
+@media only screen and (max-width: 1200px) {
+  .r-section__info .container {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .r-section__info {
     padding: 40px 20px;
@@ -2457,6 +2461,11 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .r-chose__card-title {
+    font-size: 18px;
+  }
 }
 .r-chose__card-cost {
   margin: 30px 0;
