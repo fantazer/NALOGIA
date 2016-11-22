@@ -2658,6 +2658,34 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   border: 1px solid #c8c9c9;
   padding: 5px 8px;
 }
+.r-button--center {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.r-section--more {
+  padding: 40px 0;
+  text-align: center;
+  background: #cee5e4;
+}
+.r-section--more p {
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .r-section--more p {
+    font-size: 14px;
+  }
+}
 /*
  * add style partner-rncb-end
  */
