@@ -811,6 +811,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 /*
  * add style partner
  */
+@font-face {
+  font-family: 'Circe Web';
+  src: url("../fonts/CirceWeb-Regular.eot");
+  src: url("../fonts/CirceWeb-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/CirceWeb-Regular.woff2") format('woff2'), url("../fonts/CirceWeb-Regular.woff") format('woff'), url("../fonts/CirceWeb-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .head-partner {
   background: url("../img/partner-bg.jpg") no-repeat;
   background-size: cover;
@@ -898,7 +905,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .head-partner__title {
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
@@ -913,7 +920,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .head-partner__title-sub {
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 36px;
   font-weight: 300;
   text-align: center;
@@ -1017,20 +1024,20 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #71c8f1;
-  font-family: "Open Sans";
+  color: #36a9e0;
+  font-family: "Circe Web";
   font-weight: 300;
   font-size: 30px;
   margin-right: 20px;
 }
 .partner-solution__icon .m-coner-el {
-  border-color: #71c8f1;
+  border-color: #36a9e0;
   width: 10px;
   height: 10px;
 }
 .partner-solution__text {
   color: #3e4852;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 24px;
   font-weight: 400;
   width: 100%;
@@ -1069,13 +1076,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .partner-solution__btn {
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 30px;
   font-weight: 600;
-  text-transform: uppercase;
   display: inline-block;
   background: #fff;
-  background: #71c8f1;
+  background: #36a9e0;
   width: 100%;
   text-align: center;
   padding: 30px;
@@ -1097,10 +1103,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   margin: 0 auto;
   margin-bottom: 70px;
   color: #3e4852;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 36px;
   font-weight: 600;
-  text-transform: uppercase;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
@@ -1153,7 +1158,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .partner-service__icon i {
-  color: #71c8f1;
+  color: #36a9e0;
   font-size: 90px;
 }
 @media only screen and (max-width: 768px) {
@@ -1175,7 +1180,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .partner-service__title {
   font-size: 23px;
-  font-family: Open Sans;
+  font-family: Circe Web;
   color: #3e4852;
   margin-bottom: 10px;
   font-weight: 600;
@@ -1207,10 +1212,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .partner-work__title {
   color: #3e4852;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 36px;
   font-weight: 600;
-  text-transform: uppercase;
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -1252,7 +1256,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-weight: 400;
 }
 .partner-work__icon {
@@ -1268,7 +1272,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #71c8f1;
+  color: #36a9e0;
 }
 .partner-work__icon .m-coner-el {
   border-color: #0cacf2;
@@ -1374,7 +1378,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   font-weight: 600;
   width: 100%;
   font-size: 24px;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 768px) {
@@ -1417,7 +1421,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .m-partner-price__btn {
   padding: 5px 30px;
-  background-color: #72c8f0;
+  background-color: #36a9e0;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   color: #fff;
@@ -1451,7 +1455,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-partner-price__icon i {
-  color: #71c8f1;
+  color: #36a9e0;
 }
 .m-partner-price__icon i:before {
   font-size: 115px;
@@ -1503,7 +1507,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .m-partner-price__title {
   font-weight: 600;
   font-size: 24px;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 768px) {
@@ -1528,11 +1532,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   height: 40px;
 }
 .m-partner-price__sale-title {
-  font-family: Open Sans;
+  font-family: Circe Web;
   font-size: 36px;
-  color: #72c8f0;
+  color: #36a9e0;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -1543,7 +1546,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-partner-price__sale-sub-title {
-  font-family: Open Sans;
+  font-family: Circe Web;
   font-size: 32px;
   text-align: center;
   color: #3e4852;
@@ -1608,9 +1611,8 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .m-get-partner__title {
-  text-transform: uppercase;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
@@ -1624,7 +1626,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .m-get-partner__title-sub {
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 36px;
   font-weight: 300;
   text-align: center;
@@ -1641,7 +1643,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   color: #3e4852;
   font-weight: 300;
   font-size: 36px;
-  font-family: "Open Sans";
+  font-family: "Circe Web";
   font-size: 36px;
 }
 @media only screen and (max-width: 768px) {
@@ -1650,8 +1652,32 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   }
 }
 .section-parnter-title--blue {
-  color: #0059a0;
+  color: #36a9e0;
 }
+/*rebrend*/
+.head-partner__logos--solar img {
+  width: 170px;
+}
+.head-partner {
+  background: #36a9e0;
+}
+.head-partner__logos-el {
+  padding: 10px;
+  background: #fff;
+}
+.head-partner,
+.m-section-solution,
+.m-section-service,
+.m-section-partner-work,
+.m-section-partner-price,
+.m-get-partner,
+.m-section-partner-question {
+  font-family: "Circe Web" !important;
+}
+.m-get-partner {
+  background: #36a9e0;
+}
+/*rebrend-end*/
 /*
  * add style partner-end
  */

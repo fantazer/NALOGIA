@@ -6,7 +6,7 @@ body
 	include block_html/elements/_const.jade
 
 	//Partner
-	
+	// Add class  .head-partner__logos--solar + svg icon
 	//head-partner
 	.head-partner
 		.container
@@ -16,11 +16,11 @@ body
 				.m-coner-el.m-coner-three
 				.m-coner-el.m-coner-four
 
-				.head-partner__title ДЕКЛАРАЦИЯ О ДОХОДАХ ЗА 15 МИНУТ, НЕ ВЫХОДЯ ИЗ ДОМА
+				.head-partner__title Декларация о доходах за 15 минут, не выходя из дома
 				.head-partner__title-sub Партнёрская программа
 				.head-partner__logos
-					.head-partner__logos-el
-						img(src="img/m-logo-solar.png", alt="")
+					.head-partner__logos-el.head-partner__logos--solar
+						img(src="img/m-solar-logo.svg", alt="")
 					.head-partner__logos-el
 						img(src="img/m-logo-nalogia.png", alt="")
 				a(href="#").head-partner__btn Попробуйте прямо сейчас!
@@ -138,8 +138,8 @@ body
 						.m-coner-el.m-coner-three
 						.m-coner-el.m-coner-four
 
-						.m-partner-price__sale-title Возможно, Декларация под ключ для вас бесплатна!
-						.m-partner-price__sale-sub-title Некоторые заказчики на <br> основании договора с нами берут оплату услуг по подготовке вами налоговой декларации на себя –узнайте детали
+						.m-partner-price__sale-title Возможно, Декларация "под ключ" для вас бесплатна!
+						.m-partner-price__sale-sub-title Свяжитесь с техподдержкой, чтобы узнать детали
 
 	//get-partner
 	.m-get-partner
@@ -156,119 +156,8 @@ body
 			.m-section-partner-sub-title Звоните нам – консультируем  бесплатно!
 
 
-
-
 	//Partner-end
 
-
-	//Section How work
-	.container-fluid.m-section.m-section-work
-		.container
-			.row
-				.m-section__title Как это работает
-				.col-md-4.col-sm-4.col-xs-12
-					.m-section-work__el
-						.m-section-work__img
-							img(src="img/n-icon-quest.png", alt="")
-						.m-section-work__text Вы вносите свои данные,консультанту можно задать любой вопрос
-				.col-md-4.col-sm-4.col-xs-12
-					.m-section-work__el
-						.m-section-work__img
-							img(src="img/n-icon-form.png", alt="")
-						.m-section-work__text Веб-сайт сформирует Вам правильную декларацию
-				.col-md-4.col-sm-4.col-xs-12
-					.m-section-work__el
-						.m-section-work__img.lch
-							img(src="img/n-icon-print.png", alt="")
-						.m-section-work__text Вы можете распечатать готовую декларацию или подать онлайн
-	
-	//Section Chouse
-	.container-fluid.m-section.m-section-chouse
-		.container
-			.row
-				.m-section__title Почему нужно выбрать нас
-				.col-md-4.col-sm-4.col-xs-12
-					.m-section-chouse__el
-						.m-section-chouse__img
-							img(src="img/n-icon-check.png", alt="")
-						.m-section-chouse__text Удобство и поддержка
-				.col-md-4.col-sm-4.col-xs-12
-					.m-section-chouse__el
-						.m-section-chouse__img
-							img(src="img/n-icon-defend.png", alt="")
-						.m-section-chouse__text Надежность и качество
-				.col-md-4.col-sm-4.col-xs-12
-					.m-section-chouse__el
-						.m-section-chouse__img
-							img(src="img/n-icon-pay.png", alt="")
-						.m-section-chouse__text Низкие цены
-			.row
-				.col-md-12.text-center.m-section-chouse__chouse
-					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
-			.m-section-chouse__footer 
-				|А здесь можно заполнить декларацию за 
-				a(href="#") 2013 
-				| или за 
-				a(href="#") 2014 
-				|год
-
-	//Section video
-	.container-fluid.m-section.m-section-video.main-video
-		.container
-			.row(style="text-align: center")
-				.m-section__title С нами декларация и возвраты - это просто!
-				.frame
-					.frame-inner
-						#main-video-div
-							img(class="play-video" src="http://nalogia.ru/images/main/play.png" data-pin-nopin="true")
-							img(src="img/main_preview.jpg" style="border: 1px solid #cccccc;width: 100%")
-
-	//Section review
-	.container-fluid.m-section.m-section-review
-		.container
-			.row
-				.m-section__title Отзывы наших клиентов
-				.col-md-4
-					.m-section-review__text ...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
-					.m-section-review__name Иван, Кисловодск
-				.col-md-4
-					.m-section-review__text ....Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
-					.m-section-review__name Иван, Кисловодск
-				.col-md-4
-					.m-section-review__text ...Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия. Спасибо за очень ясно изложенную, понятную, подробную и актуальную информацию на Вашем сайте Налогия...
-					.m-section-review__name Иван, Кисловодск
-			.row
-				.col-md-12.text-center.m-section-chouse__chouse
-					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
-			.m-section-chouse__footer 
-				|А здесь можно заполнить декларацию за 
-				a(href="#") 2013 
-				| или за 
-				a(href="#") 2014 
-				|год
-	//Section review
-	.container-fluid.m-section.m-section-variant
-		.container
-			.row
-				.m-section__title Варианты работы
-				.col-md-6.col-sm-6
-					.m-section-variant-el
-						.m-section-variant-el__content
-							.m-section-variant-el__title Подготовка декларации для возврата
-							.m-section-variant-el__val 499 <span> руб </span>
-						.m-section-variant-el__footer Помогаем Вам быстро и правильно подготовить декларацию
-				.col-md-6.col-sm-6
-					.m-section-variant-el
-						.m-section-variant-el__content
-							.m-section-variant-el__title Онлайн возврат налога
-							.m-section-variant-el__val 2 999 <span> руб </span> 
-						.m-section-variant-el__footer Помогаем Вам подать документы на возврат, не выходя из дома
-			.row
-				.col-md-12.text-center
-					.m-section-variant__text Мы помогли подготовить и подать декларации и другие документы уже <strong>300 445 </strong> пользователям
-			.row
-				.col-md-12.text-center.m-section-chouse__chouse
-					.btn.btn-primary.btn-nalogia Заполнить декларацию за 2016 год
 
 //Include footer
 include ./block_html/_script.jade

@@ -554,6 +554,18 @@ m_blue = #337ab7
 /*
  * add style partner
  */
+solarColor = #36a9e0
+
+@font-face {
+	font-family: 'Circe Web';
+	src: url('../fonts/CirceWeb-Regular.eot');
+	src: url('../fonts/CirceWeb-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CirceWeb-Regular.woff2') format('woff2'),
+		url('../fonts/CirceWeb-Regular.woff') format('woff'),
+		url('../fonts/CirceWeb-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 .head-partner
 	+below(1024px)
@@ -610,7 +622,7 @@ m_blue = #337ab7
 		margin-bottom 10px
 	up()
 	color white
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 36px
 	text-align center
 	margin-bottom 50px
@@ -620,7 +632,7 @@ m_blue = #337ab7
 	+below(768px)
 		font-size 18px
 	color white
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 36px
 	font-weight 300 
 	text-align center
@@ -664,20 +676,20 @@ m_blue = #337ab7
 		width 60px
 		height 60px	
 		flex(mid)
-		color #71c8f1
-		font-family "Open Sans"
+		color solarColor
+		font-family "Circe Web"
 		font-weight 300 
 		font-size 30px
 		margin-right 20px
 	.m-coner-el
-		border-color #71c8f1
+		border-color solarColor
 		width 10px
 		height 10px
 .partner-solution__text
 	+below(768px)
 		font-size 14px
 	color #3e4852
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 24px
 	font-weight 400
 	width 100%
@@ -695,13 +707,12 @@ m_blue = #337ab7
 	+below(768px)
 		font-size 16px
 	color white
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 30px
 	font-weight 600
-	text-transform uppercase
 	display inline-block
 	background #FFF 
-	background #71c8f1
+	background solarColor
 	width 100%
 	text-align center 
 	padding 30px
@@ -717,10 +728,9 @@ m_blue = #337ab7
 	margin 0 auto
 	margin-bottom 70px
 	color #3e4852
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 36px
 	font-weight 600
-	text-transform uppercase		
 	text-align center
 .parnter-service__main-title 
 	width 100%
@@ -742,7 +752,7 @@ m_blue = #337ab7
 		width 100%
 		margin-right 0
 	i
-		color #71c8f1
+		color solarColor
 		font-size 90px
 	img
 		+below(768px)
@@ -761,7 +771,7 @@ m_blue = #337ab7
 		font-size 16px
 		text-align center
 	font-size 23px
-	font-family Open Sans
+	font-family Circe Web
 	color #3e4852
 	margin-bottom 10px
 	font-weight 600 
@@ -778,10 +788,9 @@ m_blue = #337ab7
 	font-weight 400 
 .partner-work__title
 	color #3e4852
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 36px
 	font-weight 600
-	text-transform uppercase		
 	text-align center
 	width 90%
 	margin 0 auto
@@ -799,7 +808,7 @@ m_blue = #337ab7
 		height 140px
 		font-size 70px
 		flex(mid)
-		font-family "Open Sans"
+		font-family "Circe Web"
 		font-weight 400 
 .partner-work__icon
 	flex(mid)
@@ -808,7 +817,7 @@ m_blue = #337ab7
 		width 30px
 		height 30px
 		
-	color #71c8f1
+	color solarColor
 .partner-work__icon
 	+below(768px)
 		width 100%
@@ -859,7 +868,7 @@ m_blue = #337ab7
 	font-weight 600
 	width 100%
 	font-size 24px
-	font-family "Open Sans"
+	font-family "Circe Web"
 	margin-bottom 10px
 .m-partner-price__wraper
 	+below(768px)
@@ -878,7 +887,7 @@ m_blue = #337ab7
 		font-size 80px
 .m-partner-price__btn
 	padding 5px 30px
-	background-color #72c8f0
+	background-color solarColor
 	border-radius 3px
 	color white
 	margin-top 20px
@@ -891,7 +900,7 @@ m_blue = #337ab7
 	fw()
 	width 30%
 	i 
-		color #71c8f1
+		color solarColor
 		&:before
 			font-size 115px
 	&:hover
@@ -918,7 +927,7 @@ m_blue = #337ab7
 		width 100%
 	font-weight 600
 	font-size 24px
-	font-family "Open Sans"
+	font-family "Circe Web"
 	margin-bottom 10px
 .m-partner-price__sale
 	+below(768px)
@@ -933,17 +942,16 @@ m_blue = #337ab7
 	+below(768px)
 		font-size 20px
 		margin-bottom 10px
-	font-family Open Sans
+	font-family Circe Web
 	font-size 36px
-	color #72c8f0
+	color solarColor
 	text-align center
-	text-transform uppercase
 	margin-bottom 30px
 	font-weight 600 
 .m-partner-price__sale-sub-title
 	+below(768px)
 		font-size 18px
-	font-family Open Sans
+	font-family Circe Web
 	font-size 32px
 	text-align center
 	color #3e4852
@@ -974,9 +982,8 @@ m_blue = #337ab7
 	+below(768px)
 		margin-bottom 20px
 		font-size 24px
-	text-transform uppercase
 	color white
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 36px
 	text-align center
 	margin-bottom 50px
@@ -986,7 +993,7 @@ m_blue = #337ab7
 		font-size 14px
 		margin-bottom 0
 	color white
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 36px
 	font-weight 300 
 	text-align center
@@ -998,10 +1005,31 @@ m_blue = #337ab7
 	color #3e4852
 	font-weight 300
 	font-size 36px
-	font-family "Open Sans"
+	font-family "Circe Web"
 	font-size 36px
 .section-parnter-title--blue
-	color #0059a0
+	color solarColor 
+/*rebrend*/
+
+.head-partner__logos--solar
+	img
+		width 170px
+.head-partner
+	background solarColor 
+.head-partner__logos-el
+	padding 10px
+	background white 
+.head-partner,
+.m-section-solution,
+.m-section-service,
+.m-section-partner-work,
+.m-section-partner-price,
+.m-get-partner,
+.m-section-partner-question
+	font-family "Circe Web"!important
+.m-get-partner
+	background solarColor
+/*rebrend-end*/
 /*
  * add style partner-end
  */
